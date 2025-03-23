@@ -1,0 +1,112 @@
+.reviews {
+ background-color: #323232;
+}
+.reviews__title {
+ padding-top: 150px;
+ font-family: Lora;
+ font-size: 50px;
+ font-weight: normal;
+ line-height: normal;
+ letter-spacing: normal;
+ text-align: center;
+ color: #cdaf62;
+ margin-bottom: 100px;
+}
+.reviews__descr {
+ width: 79%;
+ margin: 0 auto;
+ display: flex;
+ gap: 15px;
+ flex-direction: column;
+ align-items: start;
+}
+.reviews__descr span {
+ font-family: Lora;
+ font-size: 30px;
+ font-weight: normal;
+ line-height: normal;
+ letter-spacing: normal;
+ text-align: left;
+ color: #fff;
+}
+.reviews__item {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+.numbering {
+ display: flex;
+ justify-content: center;
+ gap: 50px;
+}
+.numbering .num {
+ width: 50px;
+ height: 50px;
+ border: solid 1px #cdaf62;
+ font-family: Lora;
+ font-size: 40px;
+ font-weight: normal;
+ line-height: normal;
+ letter-spacing: normal;
+ text-align: center;
+ color: #fff;
+}
+.numbering .active {
+ background-color: #cdaf62;
+ color: #000;
+}
+.reviews__item .content {
+ width: 79%;
+ min-height: 177px;
+ margin: 50px auto;
+ background-color: #fff;
+}
+.reviews__item .content__titel {
+ margin: 15px 20px;
+ display: flex;
+ justify-content: start;
+ gap: 17px;
+ align-items: center;
+}
+.content__titel .photo {
+ border-radius: 100%;
+}
+.reviews__item .content__titel span {
+ font-family: Lora;
+ font-size: 20px;
+ font-weight: 500;
+ line-height: normal;
+ letter-spacing: normal;
+ text-align: left;
+ color: #000;
+}
+.content__titel p {
+ font-family: Lora;
+ font-size: 16px;
+ font-weight: normal;
+ line-height: normal;
+ letter-spacing: normal;
+ text-align: left;
+ color: #000;
+}
+.content__descr {
+ padding-left: 90px;
+ font-family: Lora;
+ font-size: 20px;
+ font-weight: normal;
+ line-height: normal;
+ letter-spacing: normal;
+ text-align: left;
+ color: #000;
+}
+.reviews__link {
+ padding-top: 50px;
+ font-family: Lora;
+ font-size: 24px;
+ font-weight: normal;
+ line-height: normal;
+ letter-spacing: normal;
+ text-align: left;
+ color: #fff;
+ margin-bottom: 100px;
+}

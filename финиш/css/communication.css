@@ -1,0 +1,118 @@
+.communication {
+  display: flex;
+
+  background-color: #ececec;
+  padding: 40px 0;
+}
+
+.communication__inner {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  /* align-items: center;*/
+  justify-content: center;
+  max-width: 1100px;
+}
+.communication__descr {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.communication__descr .commTitle {
+  font-family: Lora;
+  font-size: 49px;
+  font-weight: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #c2a046;
+  max-width: 700px;
+}
+
+.communication__text-nowrap {
+  white-space: nowrap;
+}
+.communication__descr .commText {
+  width: 50%;
+  padding-top: 15px;
+  font-family: Lora;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
+}
+.communication .form {
+  display: flex;
+  gap: 25px;
+  flex-direction: column;
+}
+.communication .form__group .form__input {
+  width: 580px;
+  height: 55px;
+  border: solid 1px #000;
+  background-color: #fff;
+  font-family: Lora;
+  font-size: 24px;
+  font-weight: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.5);
+  padding-left: 20px;
+}
+.communication .form .rating {
+  display: flex;
+  justify-content: start;
+  gap: 20px;
+}
+
+.rating {
+  display: flex;
+  gap: 5px;
+  font-size: 80px;
+  cursor: pointer;
+}
+
+.star {
+  color: #ccc;
+  transition: color 0.3s ease;
+}
+
+.star.active {
+  color: #cdaf62;
+}
+
+.comment textarea {
+  width: 580px;
+  height: 120px;
+  border: solid 1px #000;
+  background-color: #fff;
+  padding: 15px 20px;
+  font-family: Lora;
+  font-size: 24px;
+  font-weight: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.5);
+}
+.communication .form__button {
+  width: 250px;
+  height: 50px;
+  background-color: #cdaf62;
+  font-family: Lora;
+  font-size: 26px;
+  font-weight: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #fff;
+}
+.communication__photo-image {
+  width: 400px;
+  height: 400px;
+  display: flex;
+}

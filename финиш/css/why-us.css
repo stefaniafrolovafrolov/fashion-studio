@@ -1,0 +1,70 @@
+.why-us {
+ padding: 50px 0 70px;
+}
+
+.why-us__wrapper {
+ border-top: 1px solid #c2a046;
+ border-bottom: 1px solid #c2a046;
+}
+
+.why-us .container {
+ display: flex;
+ justify-content: space-between;
+}
+
+.why-us__title {
+ font-size: 50px;
+ font-weight: 400;
+ font-family: "Lora";
+ text-align: center;
+ color: #cdaf62;
+ margin-top: 50px;
+ margin-bottom: 60px;
+}
+
+.why-us__item {
+ flex: 1;
+ display: flex;
+ flex-direction: column;
+
+ padding: 8px 0;
+ box-sizing: border-box;
+}
+
+.why-us__item:first-child {
+ border-right: 1px solid #c2a046;
+}
+
+.why-us__item:last-child {
+ border-left: 1px solid #c2a046;
+}
+
+.why-us__item-inner {
+ display: flex;
+ justify-content: center;
+ padding: 14px 0;
+}
+
+.why-us__item-number {
+ font-family: 'Lora';
+ font-size: 40px;
+ font-weight: 400;
+ color: #cdaf62;
+ display: flex;
+ align-items: center;
+}
+
+.why-us__item-text {
+ font-size: 16px;
+ color: #f7f7f7;
+ font-weight: 400;
+ flex: 1;
+ margin-left: 10px;
+ max-width: 386px;
+ display: flex;
+ align-items: center;
+}
+
+.why-us__item-inner:last-child {
+ margin-bottom: 0;
+}

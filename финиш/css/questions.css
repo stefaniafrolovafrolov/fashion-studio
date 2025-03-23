@@ -1,0 +1,147 @@
+.feed {
+  background: rgb(44, 44, 44);
+  padding: 70px 0 70px 0;
+}
+
+.container.feeds {
+  height: 100%;
+}
+
+.feed__wrapper {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  max-width: 1100px;
+}
+
+/*.feed__content {
+  flex: 0 1 50%;
+}*/
+
+.feed__title {
+  white-space: nowrap;
+  color: #998865;
+  font-family: "Lora";
+  font-size: 50px;
+  line-height: 89.6px;
+  font-weight: 400;
+}
+
+.feed__subtitle {
+  color: #bababa;
+  font-family: "Lora";
+  font-size: 18px;
+  line-height: 30.7px;
+  margin-top: 10px;
+  margin-bottom: 18px;
+  max-width: 330px;
+}
+
+.feed__image {
+  border-radius: 50%;
+  /* overflow: hidden;
+  position: relative;*/
+}
+
+.feed__photo {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 1700px) {
+  .feed__photo {
+    width: 380px;
+    height: 380px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .feed__image {
+    position: absolute;
+    top: 70px;
+    right: 0px;
+    width: 380px;
+    height: 380px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .feed__photo {
+    width: 350px;
+    height: 350px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .feed__photo {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+/* Form */
+.form {
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 38px;
+}
+
+.form__group {
+}
+
+.form__label {
+  display: block;
+  color: rgb(255, 255, 255);
+  font-weight: 400;
+  font-family: "Lora";
+  font-size: 18px;
+  line-height: 33.28px;
+  margin-bottom: 20px;
+}
+
+.form__input {
+  width: 110%;
+  height: 55px;
+  padding: 0 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  font-family: "Lora";
+  color: rgb(255, 255, 255);
+  border: 1px solid rgb(133, 131, 131);
+  background-color: rgb(44, 44, 44);
+  font-size: 17px;
+  font-weight: lighter;
+}
+
+.form__input::placeholder {
+  color: rgb(255, 255, 255);
+  font-family: "Lora";
+  font-size: 26px;
+  font-weight: 400;
+  opacity: 0.7;
+}
+
+.form__button {
+  width: 250px;
+  height: 50px;
+  background-color: #c9a96e;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  font-family: "Lora";
+  line-height: 0px;
+  font-size: 32px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+.form__button:hover {
+  background-color: #b69459;
+}

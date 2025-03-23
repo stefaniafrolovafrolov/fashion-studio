@@ -1,0 +1,93 @@
+.footer {
+ background-color: #323232;
+}
+.footer .conteiner {
+ margin: 0 auto;
+ max-width: 1600px;
+ display: flex;
+ justify-content: space-between;
+ padding: 100px 0;
+}
+.footer .conteiner .studia {
+ display: flex;
+ flex-direction: column;
+ gap: 36px;
+}
+.footer .conteiner .studia__title {
+ font-family: Lora;
+ font-size: 38px;
+ font-weight: normal;
+ line-height: normal;
+ letter-spacing: normal;
+ text-align: left;
+ color: #cdaf62;
+}
+.footer .conteiner .pages__title {
+ font-family: Lora;
+ font-size: 26px;
+ font-weight: normal;
+ line-height: normal;
+ letter-spacing: normal;
+ text-align: left;
+ color: #cdaf62;
+ margin-bottom: 30px;
+}
+.footer .conteiner .pages__link ul {
+ list-style-type: none;
+}
+.footer .conteiner .pages__link .pages__item {
+ padding-bottom: 20px;
+}
+.footer .conteiner .pages__link .pages__item a {
+ font-family: Lora;
+ font-size: 20px;
+ font-weight: normal;
+ line-height: normal;
+ letter-spacing: normal;
+ text-align: left;
+ color: #fff;
+}
+.footer .conteiner .contacts__title {
+ font-family: Lora;
+ font-size: 26px;
+ font-weight: normal;
+ line-height: normal;
+ letter-spacing: normal;
+ text-align: left;
+ color: #cdaf62;
+ margin-bottom: 30px;
+}
+.footer .conteiner .contacts__descr {
+ width: 60%;
+ display: flex;
+ flex-direction: column;
+ justify-content: start;
+ gap: 20px;
+}
+.footer .conteiner .contacts__descr .des {
+ font-family: Lora;
+ font-size: 20px;
+ font-weight: normal;
+ line-height: normal;
+ letter-spacing: normal;
+ text-align: left;
+ color: #fff;
+}
+.footer .conteiner .sochSet__title {
+ font-family: Lora;
+ font-size: 26px;
+ font-weight: normal;
+ line-height: normal;
+ letter-spacing: normal;
+ text-align: left;
+ color: #cdaf62;
+ margin-bottom: 30px;
+}
+.footer .conteiner .sochSet__item {
+ display: flex;
+ gap: 30px;
+}
+
+.contacts .studia__title {
+ display: none;
+}
