@@ -41,15 +41,17 @@
     justify-content: space-around;
   }
   .main__certificate .titleSert {
+    text-align: center;
     font-size: 80px;
   }
   .main__certificate .descrSert {
     font-size: 30px;
   }
   .main__certificate .imgSert {
-    width: 85%;
+    max-width: 85%;
     margin: 0 auto;
-    padding-left: 10px;
+    /* padding-left: 10px;*/
+    border: 3px solid #cdaf62;
   }
   .main .connect {
     width: 85%;
@@ -1211,6 +1213,16 @@
   }
 }
 
+@media (max-width: 820px) {
+  .feed__wrapper {
+    max-width: 750px;
+  }
+
+  .main__certificate .imgSert {
+    height: 350px;
+  }
+}
+
 @media (max-width: 768px) {
   .feed__photo {
     width: 250px;
@@ -1232,7 +1244,29 @@
     padding: 0px 18px;
   }
 
-  .feed__image {
+  .main__certificate .imgSert {
+    max-width: 600px;
+    height: 340px;
+  }
+}
+
+@media (max-width: 655px) {
+  .feed {
+    padding: 0px 0 26px 0;
+  }
+}
+
+@media (max-width: 610px) {
+  .main__certificate .imgSert {
+    max-width: 500px;
+    height: 280px;
+  }
+}
+
+@media (max-width: 500px) {
+  .main__certificate .imgSert {
+    max-width: 400px;
+    height: 230px;
   }
 }
 
@@ -1607,6 +1641,22 @@
   }
 }
 
+@media (max-width: 790px) {
+  .loyalty__proposal {
+    margin-top: 40px;
+    max-width: 1680px;
+    display: flex;
+    justify-content: space-between;
+    border: solid 3px #cdaf62;
+    background-color: #e8e8e8;
+  }
+
+  .loyalty__proposal .proposal {
+    padding: 20px 15px 20px 15px;
+    margin: 0;
+  }
+}
+
 @media (max-width: 768px) {
   .nav__link {
     gap: 20px;
@@ -1732,6 +1782,21 @@
     width: 250px;
     height: 40px;
     font-size: 16px;
+  }
+}
+
+@media (max-width: 670px) {
+  .loyalty__proposal {
+    max-width: 600px;
+  }
+
+  .loyalty__proposal .proposal {
+    padding: 20px 15px 20px 15px;
+    margin: 0;
+  }
+
+  .proposal__btn {
+    margin-top: 0;
   }
 }
 
@@ -2108,6 +2173,15 @@
     margin: 0;
   }
 
+  .loyalty__proposal {
+    min-height: 140px;
+  }
+
+  .proposal__discount .summ {
+    font-size: 45px;
+    margin: 0;
+  }
+
   .loyalty__proposal .loyalty {
     height: 140px;
     display: flex;
@@ -2240,6 +2314,46 @@
   .masters77 {
     display: none;
   }
+
+  .proposal {
+    position: relative;
+  }
+
+  .proposal .proposal__title {
+    font-size: 16px;
+  }
+
+  .proposal__discount .summ {
+    font-size: 65px;
+    margin: 0;
+  }
+
+  .proposal span {
+    padding-bottom: 0;
+  }
+
+  .proposal__discount .descript {
+    top: 50px;
+    right: -14px;
+    min-width: 90px;
+    position: absolute;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 620px) {
+  .proposal__discount .summ {
+    font-size: 55px;
+    margin: 0;
+  }
+
+  .proposal__discount .descript {
+    top: 50px;
+    right: 0px;
+    min-width: 90px;
+    position: absolute;
+    font-size: 12px;
+  }
 }
 
 @media (max-width: 615px) {
@@ -2252,7 +2366,77 @@
   }
 }
 
+@media (max-width: 601px) {
+  .proposal .proposal__title {
+    font-size: 15px;
+  }
+
+  .loyalty__proposal .proposal {
+    padding: 20px 0px 20px 15px;
+    margin: 0;
+  }
+  .proposal__discount .summ {
+    font-size: 55px;
+    margin: 0;
+  }
+
+  .proposal__discount .descript {
+    top: 50px;
+    right: -30px;
+    min-width: 90px;
+    position: absolute;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 580px) {
+  .loyalty__proposal .proposal {
+    padding: 10px 0px 10px 10px;
+    margin: 0;
+  }
+
+  .proposal__discount .descript {
+    top: 40px;
+    right: -23px;
+    min-width: 90px;
+    position: absolute;
+    font-size: 12px;
+  }
+}
+
 @media (max-width: 576px) {
+  .main__certificate .titleSert {
+    font-size: 30px;
+  }
+
+  .masters__items {
+    margin-top: 50px;
+  }
+
+  .training__title {
+    font-size: 35px;
+  }
+
+  .main .loyalty__title {
+    font-size: 30px;
+  }
+
+  .masters__title {
+    font-size: 35px;
+  }
+
+  body .portfolio__title {
+    font-size: 35px;
+  }
+
+  .reviews__title {
+    font-size: 35px;
+  }
+
+  .main__certificate .descrSert {
+    font-size: 16px;
+    width: 310px;
+  }
   body .communication {
     padding: 23px 25px 30px 25px;
   }
@@ -2337,7 +2521,7 @@
   }
 
   .communication .form__group .form__input {
-    width: 100%;
+    width: 400px;
   }
 
   .nav__socialBtn {
@@ -2356,7 +2540,7 @@
   }
 
   .main__title {
-    font-size: 24px;
+    font-size: 35px;
   }
 
   .main.wh {
@@ -2426,24 +2610,54 @@
 }
 
 @media (max-width: 500px) {
-    .communication__inner {
-      max-width: 400px;
-    }
-  
-    .feed__wrapper {
-      max-width: 400px;
-    }
-  
-    .feed__content {
-      max-width: 400px;
-    }
-  
-    .feed__photo {
-      margin-left: 120px;
-    }
+  .communication__inner {
+    max-width: 400px;
   }
 
+  .feed__wrapper {
+    max-width: 400px;
+  }
+
+  .feed__content {
+    max-width: 400px;
+  }
+
+  .feed__photo {
+    margin-left: 120px;
+  }
+}
+
+@media (max-width: 486px) {
+  .loyalty__proposal .proposal {
+    padding: 6px 0px 6px 6px;
+  }
+
+  .proposal .proposal__title {
+    font-size: 14px;
+  }
+
+  .proposal__discount .summ {
+    font-size: 45px;
+    margin: 0;
+  }
+
+  .proposal__discount .descript {
+    top: 25px;
+    right: -30px;
+    min-width: 90px;
+    position: absolute;
+    font-size: 11px;
+  }
+}
+
 @media (max-width: 480px) {
+  .proposal__discount .descript {
+    top: 25px;
+    right: -13px;
+    min-width: 80px;
+    position: absolute;
+    font-size: 10px;
+  }
   .info__grid {
     display: flex;
     flex-direction: column;
@@ -2484,7 +2698,188 @@
   }
 }
 
+@media (max-width: 450px) {
+  .communication__inner {
+    max-width: 350px;
+  }
+  body .communication__descr .commTitle {
+    font-size: 26px;
+  }
+
+  .communication .form__group .form__input {
+    width: 350px;
+  }
+
+  .communication .form .comment textarea {
+    width: 350px;
+  }
+
+  .communication .form__button {
+    width: 350px;
+  }
+
+  body .communication__descr {
+    margin-top: 20px;
+  }
+
+  .feed__wrapper {
+    max-width: 350px;
+  }
+
+  .feed__content {
+    max-width: 350px;
+  }
+
+  .feed__title {
+    font-size: 26px;
+  }
+
+  .feed__photo {
+    margin-left: 100px;
+  }
+
+  .feed .form__input {
+    min-width: 350px;
+  }
+
+  .form__button {
+    width: 350px;
+  }
+
+  .form__label {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 450px) {
+  .communication__inner {
+    padding-top: 10px;
+    max-width: 320px;
+  }
+  body .communication__descr .commTitle {
+    font-size: 22px;
+  }
+
+  .communication__descr .commText {
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+
+  .communication .form__group .form__input {
+    width: 310px;
+  }
+
+  .communication .form .comment textarea {
+    width: 310px;
+  }
+
+  .communication .form__button {
+    width: 310px;
+  }
+
+  body .communication__descr {
+    margin-top: 20px;
+  }
+
+  body .communication .form {
+    max-width: 310px;
+  }
+
+  .feed__wrapper {
+    max-width: 320px;
+  }
+
+  .feed__content {
+    max-width: 320px;
+  }
+
+  .feed__title {
+    font-size: 22px;
+  }
+
+  .feed__photo {
+    margin-left: 100px;
+  }
+
+  .feed .form__input {
+    min-width: 310px;
+  }
+
+  .form__button {
+    width: 310px;
+  }
+}
+
+@media (max-width: 436px) {
+  .proposal__discount .descript {
+    top: 25px;
+    right: -17px;
+    min-width: 80px;
+    position: absolute;
+    font-size: 6px;
+  }
+
+  .proposal__discount .summ {
+    font-family: Lora;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    padding-bottom: 10px;
+  }
+
+  .proposal span {
+    font-size: 9px;
+  }
+
+  .loyalty__proposal {
+    max-width: 310px;
+  }
+
+  .loyalty__proposal .proposal {
+    padding: 10px 0px 10px 8px;
+    margin: 0;
+}
+
+
+.proposal .proposal__title {
+  padding-bottom: 10px;
+  font-size: 9px;
+}
+}
+
+@media (max-width: 410px) {
+  .main__certificate .imgSert {
+    max-width: 340px;
+    height: 200px;
+  }
+}
+
 @media (max-width: 360px) {
+  .main__certificate .imgSert {
+    max-width: 320px;
+    height: 180px;
+  }
+  body .communication {
+    padding: 23px 0px 30px 0px;
+  }
+  .communication__inner {
+    max-width: 310px;
+  }
+
+  body .communication .form {
+    width: 310px;
+  }
+
+  .feed__wrapper {
+    max-width: 310px;
+  }
+
+  .feed__photo {
+    margin-left: 85px;
+  }
+
   header .title {
     font-size: 16px;
     width: 162px;
@@ -2710,18 +3105,18 @@
     border-right: none;
   }
 
-  .loyalty__proposal .proposal {
+ /* .loyalty__proposal .proposal {
     padding: 0;
     margin: 0;
     align-items: center;
     margin-left: 18px;
     margin-top: 10px;
     margin-bottom: 10px;
-  }
+  }*/
 
   .proposal__discount .descript {
-    width: 100px;
-    text-align: center;
+    
+   
   }
 
   .main.wh {
@@ -2744,8 +3139,8 @@
 
   .feed__subtitle {
     font-size: 16px;
-    line-height: 10px;
-    width: 220px;
+    line-height: normal;
+    width: 320px;
     margin: auto;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -2862,6 +3257,12 @@
 
   .why-us__item-number {
     flex: 0 0 11%;
+  }
+}
+
+@media (max-width: 330px) {
+  .main__certificate .imgSert {
+    max-width: 310px;
   }
 }
 

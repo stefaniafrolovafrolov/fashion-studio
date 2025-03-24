@@ -1,35 +1,35 @@
 .location__heading {
- font-family: "Lora";
- font-weight: 400;
- font-size: 50px;
- line-height: 81.92px;
- color: #cdaf62;
- text-align: center;
- position: relative;
- top: 178px;
+  font-family: "Lora";
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 81.92px;
+  color: #cdaf62;
+  text-align: center;
+  position: relative;
+  top: 178px;
 }
 
 .location__subheading {
- font-family: "Lora";
- font-weight: 400;
- font-size: 32px;
- line-height: 40px;
- color: #ffffff;
- position: absolute;
- bottom: 55px;
- left: 10px;
+  font-family: "Lora";
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 40px;
+  color: #ffffff;
+  position: absolute;
+  bottom: 55px;
+  left: 10px;
 }
 
 .location__title {
- height: 450px;
- position: relative;
+  height: 450px;
+  position: relative;
 }
 
 .location__title .container {
- position: relative;
- height: 100%;
+  position: relative;
+  height: 100%;
 }
 
 .location__title--height {
- height: 190px;
+  height: 190px;
 }
