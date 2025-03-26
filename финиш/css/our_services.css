@@ -34,13 +34,22 @@
 .services {
   display: flex;
   justify-content: space-between;
-  height: 650px;
   padding-bottom: 50px;
+  /*display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  padding-bottom: 30px;*/
 }
 .services__item {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  width: 300px;
+  gap: 10px;
+}
+
+.services__img {
+  max-width: 100%;
 }
 .services__btn {
   width: 100%;
@@ -67,11 +76,6 @@
 
 .services-arrow {
   display: none;
-}
-
-.service-card-hide {
-}
-.service-card-show {
 }
 
 .loyalty {

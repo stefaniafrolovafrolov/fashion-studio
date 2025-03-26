@@ -20,28 +20,33 @@
   align-items: start;
   column-gap: 255px;
   row-gap: 80px;*/
-  outline: 5px red solid;
   max-width: 1620px;
-  margin: 150px 0 0 170px;
   margin: 0 auto;
-  margin-top: 70px;
-  display: flex;
+  padding: 70px 70px;
+  /**margin-top: 70px;*/
+  height: 100%;
+  /* display: flex;
   flex-wrap: wrap;
-  justify-content: start;
-  align-items: start;
-  column-gap: 95px;
-  row-gap: 80px;
+  justify-content: center;
+  align-items: start;*/
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  justify-items: center;
 }
 .masters__items .item {
-  width: 350px;
+  max-width: 372px;
   height: 550px;
   display: flex;
+  height: 100%;
   flex-direction: column;
   justify-content: space-between;
 }
 .masters__items .item__img {
   width: 100%;
-  height: 418px;
+  height: 100%;
+  object-fit: cover;
+  background-position: top;
 }
 .masters__items .item__title {
   font-family: Lora;

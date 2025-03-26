@@ -1,8 +1,7 @@
 .communication {
   display: flex;
-
   background-color: #ececec;
-  padding: 40px 0;
+  padding: 50px 0;
 }
 
 .communication__inner {
