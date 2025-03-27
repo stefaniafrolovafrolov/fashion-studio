@@ -2,6 +2,10 @@
   background-color: #323232;
   padding: 10px 0 150px 0;
 }
+
+.photogallery-section__tabs {
+ border-radius: 9px;
+}
 @media (max-width: 834px) {
   .photogallery-section {
     padding: 0px 0px 50px 0px;
@@ -16,7 +20,7 @@
 
 .photogallery-section__tabs {
   width: 1340px;
-  height: 140px;
+  height: 90px;
   margin: auto;
   background-color: #ffffff;
 }
@@ -145,7 +149,7 @@
   justify-content: center;
   color: #333333;
   font-family: "Lora";
-  font-size: 30px;
+  font-size: 18px;
   line-height: 33.28px;
   font-weight: 400;
   text-align: center;
@@ -196,6 +200,7 @@
 
 .photogallery-section__tabs-link_active {
   background-color: #c9a96e;
+  color: white;
 }
 @media (max-width: 360px) {
   .photogallery-section__tabs-link_active.row {

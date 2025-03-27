@@ -5,9 +5,10 @@
 /* Tabs */
 .tabs {
   width: 1340px;
-  height: 140px;
+  height: 90px;
   margin: auto;
   background-color: #ffffff;
+  border-radius: 9px;
 }
 
 .tabs__nav {
@@ -42,7 +43,7 @@
   justify-content: center;
   color: #333333;
   font-family: 'Lora';
-  font-size: 30px;
+  font-size: 18px;
   line-height: 33.28px;
   font-weight: 400;
   text-align: center;
@@ -51,6 +52,7 @@
 
 .tabs__link_active {
   background-color: #C9A96E;
+  color: white;
 }
 
 .viewer {

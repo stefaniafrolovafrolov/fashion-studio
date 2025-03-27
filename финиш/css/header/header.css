@@ -46,6 +46,10 @@
   width: 1620px;
 }
 
+.header__wrapper-text_display-none {
+  display: none;
+}
+
 .header__arrow-tablet {
   display: none;
 }
