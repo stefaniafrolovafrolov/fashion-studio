@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="css/intro.css" />
     <link rel="stylesheet" href="css/footer.css" />
     <link rel="stylesheet" href="css/media.css" />
+    <link rel="stylesheet" href="css/certificate.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
@@ -351,6 +352,65 @@
         </div>
       </section>
 
+      <section class="certificate-image">
+        <div class="container">
+          <h2 class="certificate-image-title">Сертификаты</h2>
+          <div class="certificate-image__box">
+            <div class="certificate-image__box-item">
+              <img
+                class="certificate-image__box-image"
+                src="images/img1.jpg"
+                alt="Сертификаты"
+              />
+            </div>
+            <div class="certificate-image__box-item">
+              <img
+                class="certificate-image__box-image certificate-image__box-image_scale"
+                src="images/img2.jpg"
+                alt="Сертификаты"
+              />
+            </div>
+            <div class="certificate-image__box-item">
+              <img
+                class="certificate-image__box-image"
+                src="images/img3.jpg"
+                alt="Сертификаты"
+              />
+            </div>
+            <div class="certificate-image__box-item">
+              <img
+                class="certificate-image__box-image"
+                src="images/img3.jpg"
+                alt="Сертификаты"
+              />
+            </div>
+            <div class="certificate-image__box-item">
+              <img
+                class="certificate-image__box-image"
+                src="images/img3.jpg"
+                alt="Сертификаты"
+              />
+            </div>
+          </div>
+          <div class="certificate-image__buttons">
+            <div class="certificate-image__buttons-prev">
+              <img
+                class="certificate-image__buttons-icon"
+                src="images/arrow-prev.svg"
+                alt="стрелка"
+              />
+            </div>
+            <div class="certificate-image__buttons-next">
+              <img
+                class="certificate-image__buttons-icon"
+                src="images/arrow-next.svg"
+                alt="стрелка"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
       <!--   <section class="certificates">
         <div class="container">
           <h2 class="certificates__title">Сертификаты</h2>
@@ -413,7 +473,7 @@
         </div>
       </section>-->
 
-      <div class="training">
+      <section class="training">
         <div class="container">
           <h2 class="training__title">Обучение</h2>
           <div class="training__descr">
@@ -432,7 +492,7 @@
             <img src="./images/obuch.png" alt="obuch" class="trainingImg" />
           </div>
         </div>
-      </div>
+      </section>
       <div class="portfolio">
         <div class="container">
           <h2 class="portfolio__title">Портфолио</h2>
@@ -470,20 +530,22 @@
                   <img src="images/lud.png" alt="Award ceremony" />
                 </div>
               </div>
-              <div class="navigation-container">
+              <div class="navigation-container" style="outline: 3px red solid">
                 <div class="swiper-button-prev">
-                  <img src="icons/arr-left.svg" />
+                  <img src="./icons/button-slider/Ellipse 52 (1).svg" />
                 </div>
                 <div class="swiper-pagination"></div>
                 <div class="swiper-button-next">
-                  <img src="icons/arr-right.svg" />
+                  <img src="./icons/button-slider/Ellipse 53.svg" />
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="reviews">
+      <section class="reviews">
+
+        <div class="container">
         <h2 class="reviews__title">Отзывы</h2>
 
         <div class="comments-total-rating"></div>
@@ -510,12 +572,12 @@
         </div>-->
 
         <div class="reviews__item">
-          <div class="numbering">
+         <!-- <div class="numbering">
             <div class="num active">1</div>
             <div class="num">2</div>
           </div>
 
-          <!--    <div class="content">
+              <div class="content">
             <div class="content__titel">
               <img class="photo" src="./images/zaglushka.png" alt="photo" />
               <span>Елена</span>
@@ -533,17 +595,18 @@
               знаю, в вашей воле Меня презреньем наказать. Но вы, к моей
               несчастной доле Хоть каплю жалости храня, Вы не оставите меня.
             </div>
-          </div>-->
+          </div>
 
           <div class="numbering">
             <div class="num active">1</div>
             <div class="num">2</div>
-          </div>
+          </div>-->
           <a href="#" class="reviews__link"
             >читать больше отзывов на яндекс картах</a
           >
         </div>
       </div>
+      </section>
 
       <div class="communication">
         <div class="container">
@@ -557,31 +620,78 @@
               </span>
               <br />
               <p class="commText">Ваш номер телефона не будет опубликован</p>
-              <form class="form" id="formReviews" name="formReviews" method="post" action="/">
+              <form
+                class="form reviews__form"
+                id="formReviews"
+                name="formReviews"
+              >
                 <div class="form__group">
                   <input
-                    type="tel"
+                    class="form__input reviews__input reviews__formInputName form__input_placholder-color"
+                    id="nameInput"
+                    name="name"
+                    type="text"
+                    placeholder="Ваше имя"
+                    minlength="2"
                     required
-                    class="form__input"
-                    placeholder="+7 (999)999-99-99"
                   />
+                  <span class="nameInput-errors errors"></span>
                 </div>
-                <div class="rating">
+
+                <div class="form__group">
+                  <input
+                    class="form__input reviews__input reviews__formInputTelephone form__input_placholder-color"
+                    id="phonetInput"
+                    name="phone"
+                    type="tel"
+                    minlength="11"
+                    maxlength="30"
+                    pattern="^(\+7\d{10}|8\d{10})$"
+                    placeholder="+7XXXXXXXXXX или 8XXXXXXXXXX"
+                    required
+                  />
+                  <span class="phonetInput-errors errors"></span>
+                </div>
+                <!--<div class="rating">
                   <span class="star" data-value="1">&#9734;</span>
                   <span class="star" data-value="2">&#9734;</span>
                   <span class="star" data-value="3">&#9734;</span>
                   <span class="star" data-value="4">&#9734;</span>
                   <span class="star" data-value="5">&#9734;</span>
-                </div>
+                </div>-->
+                <div class="reviews__rating-master">Оцените работу мастера</div>
+                <div class="comments-form-rating"></div>
+                <input type="hidden" name="rate" value="0" />
+
                 <div class="comment">
                   <textarea
-                    name="comment"
-                    cols="40"
-                    rows="7"
-                    placeholder="Оставьте отзыв"
+                    class="reviews__input reviews__formInputComment"
+                    id="textInput"
+                    name="text"
+                    minlength="2"
+                    type="text"
+                    required
+                    placeholder="Оставьте отзыв не более 1000 символов"
                   ></textarea>
+                  <span class="textInput-errors errors"></span>
                 </div>
-                <button type="submit" class="form__button reviews__formButtonRew">Отправить</button>
+                <input
+                  name="send"
+                  id="submitButtonComments"
+                  type="submit"
+                  class="form__button reviews__formButtonRew reviews__formButtonRew_disabled"
+                  onclick="submitComment()"
+                  type="button"
+                  value="Оставить отзыв"
+                />
+
+                <div class="comments-form-warning">
+                  <span class="comments-form-warning__text"
+                    >Спасибо за ваш отзыв и оценку мастера! Для отправки еще
+                    одного комментария подождите еще
+                  </span>
+                  <span class="comments-form-timeout">0</span> сек.
+                </div>
               </form>
             </div>
             <div class="communication__photo">
@@ -641,7 +751,7 @@
               <p class="feed__subtitle">
                 Оставьте заявку и наш менеджер свяжется с вами в ближайшее время
               </p>
-              <form class="form-vopros registration__formRegister" id="contactForm">
+              <form class="form-vopros" id="contactForm">
                 <div class="form__group">
                   <label class="form__label">Ваше имя</label>
                   <input
@@ -662,7 +772,7 @@
                     id="phoneInput"
                     name="phone"
                     type="tel"
-                    class="form__input registration__input"
+                    class="form__input registration__input registration__input_type_errors"
                     minlength="11"
                     maxlength="30"
                     pattern="^(\+7\d{10}|8\d{10})$"
@@ -868,9 +978,13 @@
     <script src="./scripts/video-resize.js"></script>
     <script src="./scripts/comments.js"></script>
     <script src="./scripts/telegramApiBot.js"></script>
-    <script type="module" src="./scripts/main.js"></script>
-    
-    
+    <script src="./scripts/certificate.js"></script>
+    <script type="module" src="./scripts/index.js"></script>
+    <script>
+      // Инициализация элементов на странице через дополнительные запросы к API
+      document.addEventListener("DOMContentLoaded", getPageData);
+    </script>
+
     <script>
       const modal2 = createModal({
         openButtonSelector: ".header__advert",
@@ -1016,6 +1130,5 @@
         });
       });
     </script>
-    
   </body>
 </html>

@@ -3,6 +3,11 @@
   padding: 70px 0 70px 0;
 }
 
+.reviews__formButtonRew_valid {
+  background: #c9a96e;
+  color: #fff;
+}
+
 .container.feeds {
   height: 100%;
 }
@@ -101,6 +106,18 @@
   margin-bottom: 20px;
 }
 
+.comments-form-warning {
+  background: #5ad84a;
+  margin-top: 10px;
+  color: white;
+  display: none;
+  text-align: center;
+  padding: 7px 7px;
+}
+
+.comments-form-warning__text {
+  max-width: 486px;
+}
 .form__input {
   width: 110%;
   height: 55px;
@@ -115,6 +132,11 @@
   font-weight: lighter;
 }
 
+.form__input:focus {
+  outline: none;
+  background: rgb(34, 33, 33);
+}
+
 .form__input::placeholder {
   color: rgb(255, 255, 255);
   font-family: "Lora";
@@ -123,9 +145,21 @@
   opacity: 0.7;
 }
 
+.form__input_placholder-color::placeholder {
+  color: rgba(0, 0, 0, 0.8);
+}
+
 .registration__formRegisterButton_valid {
   background: #1a07c5;
   color: #fff;
+}
+
+.reviews__input_type_errors {
+  border: 1px solid #ff0000;
+}
+
+.form__input_type_errors {
+  border: 1px solid #ff0000;
 }
 
 .success-message {
@@ -197,7 +231,7 @@
   color: red;
   display: block;
   font-family: Inter;
-  font-size: 12px;
+  font-size: 15px;
   font-weight: 400;
   line-height: 15px;
   /* padding-left: 25px;*/

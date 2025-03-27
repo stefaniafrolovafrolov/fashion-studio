@@ -173,9 +173,7 @@ function makeComment(comment, admin = false) {
  <div class="content">
             <div class="content__titel">
               <img class="photo" src="./images/zaglushka.png" alt="аватарка профиля" />
-              <span class="reviews__name">
-                        ${comment.name} 
-                      </span>
+            
               <p class="reviews__date">${localDate}</p>
              
               <div class="star">
@@ -193,6 +191,9 @@ function makeComment(comment, admin = false) {
                       }">${
     comment.rate == 0 ? `0.0` : ((Number(comment.rate) - 1) / 2).toFixed(1)
   }</span>
+    <span class="reviews__name">
+                        ${comment.name} 
+                      </span>
               </div>
             </div>
             <div class="content__descr">
