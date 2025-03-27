@@ -1,9 +1,7 @@
 const form = document.getElementById("contactForm");
-const selectSingleInputs = document.querySelectorAll(".__select__input");
-const selectSingleTitle = document.querySelector(".__select__title");
-const errorMessage = document.getElementById("procedures-error");
 const submitButton = document.getElementById("submitButton");
 const serverErrorMessage = document.getElementById("server-error-message");
+
 const messageValidationFormPtocedures = document.querySelector(
   ".procedures__message-validation"
 );
@@ -16,59 +14,30 @@ const countdownDisplay = document.getElementById("countdown");
 submitButton.classList.add("registration__formRegisterButton_disabled");
 submitButton.disabled = true;
 
-const selectSingle = document.querySelector(".__select");
-const selectSingle_title = selectSingle.querySelector(".__select__title");
-const selectSingle_labels = selectSingle.querySelectorAll(".__select__label");
-
-selectSingle_title.addEventListener("click", () => {
-  if ("active" === selectSingle.getAttribute("data-state")) {
-    selectSingle.setAttribute("data-state", "");
-  } else {
-    selectSingle.setAttribute("data-state", "active");
-  }
-});
-
-for (let i = 0; i < selectSingle_labels.length; i++) {
-  selectSingle_labels[i].addEventListener("click", (evt) => {
-    selectSingle_title.textContent = evt.target.textContent;
-    selectSingle.setAttribute("data-state", "");
-  });
+function areFieldsValid() {
+  const formData = new FormData(form);
+  const nameValue = formData.get("name");
+  const phoneValue = formData.get("phone");
+  return nameValue && phoneValue;
 }
 
 function areFieldsValid() {
   const formData = new FormData(form);
   const nameValue = formData.get("name");
   const phoneValue = formData.get("phone");
-  const selectedOption = Array.from(selectSingleInputs).find(
-    (input) => input.checked
-  );
-  return nameValue && phoneValue && selectedOption;
-}
-
-function areFieldsValid() {
-  const formData = new FormData(form);
-  const nameValue = formData.get("name");
-  const phoneValue = formData.get("phone");
-  const selectedOption = Array.from(selectSingleInputs).find(
-    (input) => input.checked
-  );
 
   const isNameValid = nameValue && nameValue.length >= 2;
   const isPhoneValid = phoneValue && phoneValue.length === 11;
-  const isSelectedOptionValid = selectedOption !== undefined;
 
-  return isNameValid && isPhoneValid && isSelectedOptionValid;
+  return isNameValid && isPhoneValid;
 }
 
 form.addEventListener("input", function () {
-  
   if (areFieldsValid()) {
-    errorMessage.style.display = "none";
     submitButton.disabled = false;
     submitButton.classList.remove("registration__formRegisterButton_disabled");
     submitButton.classList.add("registration__formRegisterButton_valid");
   } else {
-    errorMessage.style.display = "block"; // Показываем сообщение об ошибке
     submitButton.disabled = true;
     submitButton.classList.add("registration__formRegisterButton_disabled");
     submitButton.classList.remove("registration__formRegisterButton_valid");
@@ -79,7 +48,6 @@ form.addEventListener("submit", function (e) {
   e.preventDefault();
 
   if (isSending) {
-
     alert("Пожалуйста, подождите 1 минуту перед повторной отправкой.");
     return;
   }
@@ -101,24 +69,9 @@ form.addEventListener("submit", function (e) {
   isSending = true;
   const formData = new FormData(form);
 
-  const selectedOption = Array.from(selectSingleInputs).find(
-    (input) => input.checked
-  );
-
-  if (!selectedOption) {
-    console.error("Не выбрана процедура!");
-
-    errorMessage.style.display = "block";
-
-    return;
-  } else {
-    errorMessage.style.display = "none";
-  }
-
   const data = {
     name: formData.get("name"),
     phone: formData.get("phone"),
-    procedures: selectedOption.value,
   };
 
   if (!areFieldsValid()) {
@@ -132,7 +85,7 @@ form.addEventListener("submit", function (e) {
   submitButton.classList.add("registration__formRegisterButton_disabled");
   serverErrorMessage.style.display = "none";
 
-  fetch("http:localhost/backend/submit-form", {
+  fetch("http://localhost:3000/backend/submit-form", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -152,10 +105,6 @@ form.addEventListener("submit", function (e) {
       form.reset();
 
       setTimeout(() => {
-        selectSingleTitle.textContent = "Выберите процедуру";
-      }, 1000);
-
-      setTimeout(() => {
         successMessage.style.display = "none";
       }, 6000);
     })
@@ -168,11 +117,13 @@ form.addEventListener("submit", function (e) {
     .finally(() => {
       submitButton.classList.add("registration__formRegisterButton_disabled");
       submitButton.classList.remove("registration__formRegisterButton_valid");
-      submitButton.textContent = "Оставить заявку";
+      submitButton.textContent = "Отправить";
       submitButton.disabled = true;
       setTimeout(() => {
         isSending = false;
         submitButton.disabled = true;
+        form.reset();
+        submitButton.classList.add("registration__formRegisterButton_disabled");
       }, 60000);
     });
 });

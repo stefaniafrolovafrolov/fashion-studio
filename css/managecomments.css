@@ -1,0 +1,23 @@
+.page_background {
+  background: rgb(247, 162, 162);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page {
+  max-width: 1280px;
+}
+
+.page__content_background {
+  background: rgb(247, 162, 162);
+}
+
+.content__adminka {
+  background: rgb(247, 162, 162);
+  margin: 0 auto;
+}
+
+.reviews__container_margin {
+  margin: 0 auto;
+}

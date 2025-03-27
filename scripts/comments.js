@@ -1,4 +1,4 @@
-const baseURL4API = "https://xn--80aqgbgo.xn--p1ai/backend";
+const baseURL4API = "http://localhost:3000/backend";
 const commentsRateImages = [
   "/images/stars/starun.svg",
   "/images/stars/star00.svg",
@@ -125,14 +125,14 @@ function fetchBackend(api = "getMe", body = {}, useGet = true) {
   return fetchAPI()
     .then(async (res) => {
       if (res.ok) return await res.json();
-      const body = document.querySelector(".container-body");
+      const body = document.querySelector(".root");
       body.innerHTML = `<H1>HTTP ${res.status || "500"}: ${
         res.message
       }</H1><BR><SPAN>Ошибка на сервере</SPAN>`;
       return Promise.reject(`Server error: ${res.message}`);
     })
     .catch((res) => {
-      const body = document.querySelector(".container-body");
+      const body = document.querySelector(".root");
       body.innerHTML = `<H1>HTTP ${res.status || "500"}: ${
         res.message
       }</H1><BR><SPAN>Ошибка запроса</SPAN>`;
@@ -168,19 +168,18 @@ function makeComment(comment, admin = false) {
     timeStyle: "short", // long, full, итд
   }).format(commentDate);
   const commentHtml = `
-      <div class="reviews__card">
-          <div class="reviews__wpapper">
-              <img
-                  class="reviews__avatar"
-                  src="./images/avatar.png"
-                  alt="аватарка профиля"
-              />
-              <div class="reviews__wrapper-title">
-                  <div class="reviews__wrapper-date-stars">
-                 
-                     
-                     
-                       <span class="reviews__stars-desktop">
+
+
+ <div class="content">
+            <div class="content__titel">
+              <img class="photo" src="./images/zaglushka.png" alt="аватарка профиля" />
+              <span class="reviews__name">
+                        ${comment.name} 
+                      </span>
+              <p class="reviews__date">${localDate}</p>
+             
+              <div class="star">
+                  <span class="reviews__stars-desktop">
                       <img src="${getRatingHrefForPages(comment.rate)}" 
                              alt="звездочки" 
                              title="${
@@ -189,23 +188,17 @@ function makeComment(comment, admin = false) {
                                  : (comment.rate - 1) / 2
                              }" />
                   </span>
-                   
                       <span class="reviews__stars reviews__stars${
                         comment.rate
                       }">${
     comment.rate == 0 ? `0.0` : ((Number(comment.rate) - 1) / 2).toFixed(1)
   }</span>
-                  <span class="reviews__date">${localDate}</span>
-                
-                   <span class="reviews__name">
-                        ${comment.name} 
-                      </span>
-                  </div>
-                 
               </div>
-          </div>
-          <pre class="reviews__comment">${comment.text}</pre>
-      </div>`;
+            </div>
+            <div class="content__descr">
+              <pre class="reviews__comment">${comment.text}</pre>
+            </div>
+          </div>`;
 
   return `<div class="comments-container-item">${commentHtml}${
     admin
@@ -261,7 +254,7 @@ function reloadComments(page) {
         list.push(makeComment(comment, false));
       }
     });
-    comments.innerHTML = `${pages}<DIV class="reviews__container">${list.join(
+    comments.innerHTML = `${pages}<DIV class="reviews__item">${list.join(
       ""
     )}</DIV>${pages}`;
     queryTotalRating();
@@ -336,7 +329,8 @@ function truncateName(name = "") {
 }
 
 function submitComment() {
-  const form = document.querySelector(".reviews__form");
+  const form = document.getElementById("formReviews");
+  console.log(form);
   const thanks = document.querySelector(".comments-form-warning");
 
   const errorMessage = document.getElementById("server-error-message");

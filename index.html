@@ -485,7 +485,20 @@
       </div>
       <div class="reviews">
         <h2 class="reviews__title">Отзывы</h2>
-        <div class="reviews__descr">
+
+        <div class="comments-total-rating"></div>
+        <div class="comments-total-rating-stars">
+          <img
+            class="comments-total-image"
+            src="./images/stars/starun.svg"
+            alt="не задан"
+            title="не задан"
+          />
+
+          <div class="container-comments-area"></div>
+        </div>
+
+        <!-- <div class="reviews__descr">
           <span>По вашим отзывам рейтинг мастера 5.0</span>
           <div class="star">
             <img src="./icons/Star 42.png" alt="Star" />
@@ -494,13 +507,15 @@
             <img src="./icons/Star 42.png" alt="Star" />
             <img src="./icons/Star 42.png" alt="Star" />
           </div>
-        </div>
+        </div>-->
+
         <div class="reviews__item">
           <div class="numbering">
             <div class="num active">1</div>
             <div class="num">2</div>
           </div>
-          <div class="content">
+
+          <!--    <div class="content">
             <div class="content__titel">
               <img class="photo" src="./images/zaglushka.png" alt="photo" />
               <span>Елена</span>
@@ -518,83 +533,8 @@
               знаю, в вашей воле Меня презреньем наказать. Но вы, к моей
               несчастной доле Хоть каплю жалости храня, Вы не оставите меня.
             </div>
-          </div>
-          <div class="content">
-            <div class="content__titel">
-              <img class="photo" src="./images/zaglushka.png" alt="photo" />
-              <span>Елена</span>
-              <p>02.11.2025</p>
-              <div class="star">
-                <img src="./icons/Star 42.png" width="25px" alt="Star" />
-                <img src="./icons/Star 42.png" width="25px" alt="Star" />
-                <img src="./icons/Star 42.png" width="25px" alt="Star" />
-                <img src="./icons/Star 42.png" width="25px" alt="Star" />
-                <img src="./icons/Star 42.png" width="25px" alt="Star" />
-              </div>
-            </div>
-            <div class="content__descr">
-              Я к вам пишу — чего же боле? Что я могу еще сказать? Теперь, я
-              знаю, в вашей воле Меня презреньем наказать. Но вы, к моей
-              несчастной доле Хоть каплю жалости храня, Вы не оставите меня.
-            </div>
-          </div>
-          <div class="content">
-            <div class="content__titel">
-              <img class="photo" src="./images/zaglushka.png" alt="photo" />
-              <span>Елена</span>
-              <p>02.11.2025</p>
-              <div class="star">
-                <img src="./icons/Star 42.png" width="25px" alt="Star" />
-                <img src="./icons/Star 42.png" width="25px" alt="Star" />
-                <img src="./icons/Star 42.png" width="25px" alt="Star" />
-                <img src="./icons/Star 42.png" width="25px" alt="Star" />
-                <img src="./icons/Star 42.png" width="25px" alt="Star" />
-              </div>
-            </div>
-            <div class="content__descr">
-              Я к вам пишу — чего же боле? Что я могу еще сказать? Теперь, я
-              знаю, в вашей воле Меня презреньем наказать. Но вы, к моей
-              несчастной доле Хоть каплю жалости храня, Вы не оставите меня.
-            </div>
-          </div>
-          <div class="content">
-            <div class="content__titel">
-              <img class="photo" src="./images/zaglushka.png" alt="photo" />
-              <span>Елена</span>
-              <p>02.11.2025</p>
-              <div class="star">
-                <img src="./icons/Star 42.png" width="25px" alt="Star" />
-                <img src="./icons/Star 42.png" width="25px" alt="Star" />
-                <img src="./icons/Star 42.png" width="25px" alt="Star" />
-                <img src="./icons/Star 42.png" width="25px" alt="Star" />
-                <img src="./icons/Star 42.png" width="25px" alt="Star" />
-              </div>
-            </div>
-            <div class="content__descr">
-              Я к вам пишу — чего же боле? Что я могу еще сказать? Теперь, я
-              знаю, в вашей воле Меня презреньем наказать. Но вы, к моей
-              несчастной доле Хоть каплю жалости храня, Вы не оставите меня.
-            </div>
-          </div>
-          <div class="content">
-            <div class="content__titel">
-              <img class="photo" src="./images/zaglushka.png" alt="photo" />
-              <span>Елена</span>
-              <p>02.11.2025</p>
-              <div class="star">
-                <img src="./icons/Star 42.png" width="25px" alt="Star" />
-                <img src="./icons/Star 42.png" width="25px" alt="Star" />
-                <img src="./icons/Star 42.png" width="25px" alt="Star" />
-                <img src="./icons/Star 42.png" width="25px" alt="Star" />
-                <img src="./icons/Star 42.png" width="25px" alt="Star" />
-              </div>
-            </div>
-            <div class="content__descr">
-              Я к вам пишу — чего же боле? Что я могу еще сказать? Теперь, я
-              знаю, в вашей воле Меня презреньем наказать. Но вы, к моей
-              несчастной доле Хоть каплю жалости храня, Вы не оставите меня.
-            </div>
-          </div>
+          </div>-->
+
           <div class="numbering">
             <div class="num active">1</div>
             <div class="num">2</div>
@@ -617,7 +557,7 @@
               </span>
               <br />
               <p class="commText">Ваш номер телефона не будет опубликован</p>
-              <form class="form" method="post" action="/">
+              <form class="form" id="formReviews" name="formReviews" method="post" action="/">
                 <div class="form__group">
                   <input
                     type="tel"
@@ -641,7 +581,7 @@
                     placeholder="Оставьте отзыв"
                   ></textarea>
                 </div>
-                <button type="submit" class="form__button">Отправить</button>
+                <button type="submit" class="form__button reviews__formButtonRew">Отправить</button>
               </form>
             </div>
             <div class="communication__photo">
@@ -701,26 +641,63 @@
               <p class="feed__subtitle">
                 Оставьте заявку и наш менеджер свяжется с вами в ближайшее время
               </p>
-              <form class="form-vopros" method="post" action="/">
+              <form class="form-vopros registration__formRegister" id="contactForm">
                 <div class="form__group">
                   <label class="form__label">Ваше имя</label>
                   <input
+                    id="nameInput"
+                    name="name"
+                    minlength="2"
                     type="text"
+                    class="form__input registration__input"
+                    pattern="^[A-Za-zА-Яа-яЁё]{2,}$"
+                    placeholder="Введите минимум 2 символа"
                     required
-                    class="form__input"
-                    placeholder="Наталья"
                   />
+                  <span class="nameInput-errors errors"></span>
                 </div>
                 <div class="form__group">
                   <label class="form__label">Номер телефона</label>
                   <input
+                    id="phoneInput"
+                    name="phone"
                     type="tel"
+                    class="form__input registration__input"
+                    minlength="11"
+                    maxlength="30"
+                    pattern="^(\+7\d{10}|8\d{10})$"
+                    placeholder="+7XXXXXXXXXX или 8XXXXXXXXXX"
                     required
-                    class="form__input"
-                    placeholder="+7 (952) 213-66-02"
                   />
+                  <span class="phoneInput-errors errors"></span>
                 </div>
-                <button type="submit" class="form__button">Отправить</button>
+
+                <span
+                  class="procedures__message-error"
+                  id="server-error-message"
+                ></span>
+
+                <div class="success-message">
+                  Сообщение успешно отправлено! Мастер свяжется с вами в
+                  близжайшее время!
+                </div>
+
+                <div
+                  class="timer-message"
+                  id="timerMessage"
+                  style="display: none"
+                >
+                  Пожалуйста, подождите <span id="countdown">60</span> секунд
+                  перед повторной отправкой.
+                </div>
+
+                <button
+                  type="submit"
+                  class="form__button registration__formRegisterButton registration__formRegisterButton_disabled"
+                  id="submitButton"
+                >
+                  Отправить
+                </button>
               </form>
             </div>
             <div class="feed__image">
@@ -889,6 +866,11 @@
     <script src="scripts/script.js"></script>
     <script src="scripts/modal.js"></script>
     <script src="./scripts/video-resize.js"></script>
+    <script src="./scripts/comments.js"></script>
+    <script src="./scripts/telegramApiBot.js"></script>
+    <script type="module" src="./scripts/main.js"></script>
+    
+    
     <script>
       const modal2 = createModal({
         openButtonSelector: ".header__advert",
@@ -1034,5 +1016,6 @@
         });
       });
     </script>
+    
   </body>
 </html>
