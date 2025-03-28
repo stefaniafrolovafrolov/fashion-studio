@@ -288,10 +288,10 @@
 }
 
 @media (max-width: 1650px) {
-  .reviews__item .content {
+  .reviews__container .content {
     min-height: 120px;
   }
-  .reviews__item {
+  /*.reviews__container {
     outline: 7px red solid;
     display: flex;
     flex-direction: column;
@@ -301,7 +301,7 @@
     width: 1220px;
     margin-top: 30px;
     margin: 0 auto;
-  }
+  }*/
 }
 
 @media (max-width: 1600px) {
@@ -526,35 +526,35 @@
   .reviews__descr span {
     font-size: 32px;
   }
-  .reviews__item .numbering {
+  .reviews__container .numbering {
     gap: 35px;
   }
-  body .reviews__item .numbering .num {
+  body .reviews__container .numbering .num {
     width: 40px;
     height: 40px;
     font-size: 30px;
   }
-  body .reviews__item .content {
+  body .reviews__container .content {
     min-width: 1000px;
-    min-height: 120px;
+    outline: red solid 5px;
   }
-  body .reviews__item .content__titel {
+  body .reviews__container .content__titel {
     margin: 15px 20px;
     display: flex;
     justify-content: start;
     gap: 17px;
     align-items: center;
   }
-  body .reviews__item .content__titel .photo {
+  body .reviews__container .content__titel .photo {
     width: 25px;
   }
-  body .reviews__item .content__titel span {
+  body .reviews__container .content__titel span {
     font-size: 17px;
   }
-  body .reviews__item .content__titel p {
+  body .reviews__container .content__titel p {
     font-size: 12px;
   }
-  body .reviews__item .content__descr {
+  body .reviews__container .content__descr {
     padding-left: 30px;
     font-size: 15px;
   }
@@ -568,9 +568,9 @@
     padding-top: 0;
   }
 
-  .reviews__item {
+  /* .reviews__container {
     width: 1120px;
-  }
+  }*/
 
   /*body .communication__descr .commTitle {
     font-size: 25px;
@@ -862,10 +862,10 @@
 }
 
 @media (max-width: 1155px) {
-  .reviews__item {
+  /* .reviews__container {
     width: 920px;
-  }
-  body .reviews__item .content {
+  }*/
+  .content {
     min-width: 800px;
   }
 }
@@ -1047,10 +1047,10 @@
 }
 
 @media (max-width: 955px) {
-  .reviews__item {
+  /*.reviews__container {
     width: 820px;
-  }
-  body .reviews__item .content {
+  }*/
+  body .reviews__container .content {
     min-width: 600px;
   }
 }
@@ -1587,7 +1587,7 @@
   .communication .form .comment textarea {
     width: 300px;
     height: 105px;
-    padding: 0;
+    padding: 10px 10px;
   }
 
   .communication .form .comment textarea::placeholder {
@@ -1770,7 +1770,7 @@
     flex: 0 0 16%;
   }
 
-  body .reviews__item .content {
+  body .reviews__container .content {
     width: 85%;
     margin: 16px auto;
   }
@@ -2162,22 +2162,22 @@
     margin: auto;
   }
 
-  body .reviews__item .content__descr {
+  body .reviews__container .content__descr {
     padding: 0;
     font-size: 10px;
   }
 
-  body .reviews__item .content {
+  body .reviews__container .content {
     width: 92%;
     margin: 16px auto;
     padding: 8px;
   }
 
-  body .reviews__item .content__titel span {
+  body .reviews__container .content__titel span {
     font-size: 10px;
   }
 
-  .reviews__item .content .star img {
+  .reviews__container .content .star img {
     width: 15px;
   }
 
@@ -2370,7 +2370,7 @@
     margin-bottom: 25px;
   }
 
-  body .reviews__item .numbering .num {
+  body .reviews__container .numbering .num {
     width: 35px;
     height: 35px;
   }
@@ -2555,6 +2555,11 @@
     color: #666;
     border: 1px solid #aaa;
     transition: 0.3s ease;
+  }
+  body .reviews__link {
+    font-size: 16px;
+    padding-top: 15px;
+    margin-bottom: 40px;
   }
 }
 
@@ -2852,6 +2857,9 @@
   .feed__title,
   .feed__subtitle {
     text-align: center;
+  }
+  .communication .form .comment textarea {
+    width: 400px;
   }
 }
 

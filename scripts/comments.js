@@ -168,16 +168,19 @@ function makeComment(comment, admin = false) {
     timeStyle: "short", // long, full, итд
   }).format(commentDate);
   const commentHtml = `
-
-
- <div class="content">
-            <div class="content__titel">
-              <img class="photo" src="./images/zaglushka.png" alt="аватарка профиля" />
-            
-              <p class="reviews__date">${localDate}</p>
-             
-              <div class="star">
-                  <span class="reviews__stars-desktop">
+ <div class="reviews__card">
+          <div class="reviews__wpapper">
+              <img
+                  class="reviews__avatar"
+                  src="./images/zaglushka.png"
+                  alt="аватарка профиля"
+              />
+              <div class="reviews__wrapper-title">
+                  <div class="reviews__wrapper-date-stars">
+                 
+                     
+                     
+                       <span class="reviews__stars-desktop">
                       <img src="${getRatingHrefForPages(comment.rate)}" 
                              alt="звездочки" 
                              title="${
@@ -186,20 +189,25 @@ function makeComment(comment, admin = false) {
                                  : (comment.rate - 1) / 2
                              }" />
                   </span>
+                   
                       <span class="reviews__stars reviews__stars${
                         comment.rate
                       }">${
     comment.rate == 0 ? `0.0` : ((Number(comment.rate) - 1) / 2).toFixed(1)
   }</span>
-    <span class="reviews__name">
+                  <span class="reviews__date">${localDate}</span>
+                
+                   <span class="reviews__name">
                         ${comment.name} 
                       </span>
+                  </div>
+                 
               </div>
-            </div>
-            <div class="content__descr">
-              <pre class="reviews__comment">${comment.text}</pre>
-            </div>
-          </div>`;
+          </div>
+          <pre class="reviews__comment">${comment.text}</pre>
+      </div>
+
+ `;
 
   return `<div class="comments-container-item">${commentHtml}${
     admin
@@ -255,7 +263,7 @@ function reloadComments(page) {
         list.push(makeComment(comment, false));
       }
     });
-    comments.innerHTML = `${pages}<DIV class="reviews__item">${list.join(
+    comments.innerHTML = `${pages}<DIV class="reviews__container">${list.join(
       ""
     )}</DIV>${pages}`;
     queryTotalRating();

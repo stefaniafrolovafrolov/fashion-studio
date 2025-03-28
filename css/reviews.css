@@ -41,7 +41,7 @@
   text-align: left;
   color: #fff;
 }
-.reviews__item {
+.reviews__container {
   outline: 7px red solid;
   display: flex;
   flex-direction: column;
@@ -51,6 +51,8 @@
   width: 1620px;
   margin-top: 30px;
   margin: 0 auto;
+
+  /*outline: 9px red solid;*/
 }
 
 .container-page-console-button {
@@ -144,14 +146,14 @@
   background-color: #cdaf62;
   color: #000;
 }
-.reviews__item .content {
+.reviews__container .content {
   outline: 7px blue solid;
   min-width: 1220px;
   min-height: 177px;
   margin: 50px auto;
   background-color: #fff;
 }
-.reviews__item .content__titel {
+.reviews__container .content__titel {
   margin: 15px 20px;
   display: flex;
   justify-content: start;
@@ -160,12 +162,11 @@
 }
 
 .reviews__comment {
-  outline: 5px red solid;
   font-family: Inter;
   font-size: 15px;
   font-weight: 400;
   line-height: 18.15px;
-  padding: 15px 20px 30px 90px;
+  padding: 0px 20px 30px 0px;
   max-width: 1000px;
   text-align: left;
   margin: 0;
@@ -176,7 +177,7 @@
 .content__titel .photo {
   border-radius: 100%;
 }
-.reviews__item .content__titel span {
+.reviews__container .content__titel span {
   font-family: Lora;
   font-size: 20px;
   font-weight: 500;
@@ -195,6 +196,7 @@
   color: #000;
 }
 .content__descr {
+  outline: 5px red solid;
   padding-left: 90px;
   font-family: Lora;
   font-size: 20px;
@@ -216,14 +218,10 @@
   margin-bottom: 80px;
 }
 
-
-
-
-.reviews__item .content {
-    outline: 7px blue solid;
-    min-width: 1220px;
-    min-height: 177px;
-    margin: 50px auto;
-    background-color: #fff;
-  }
+.reviews__container .content {
+  outline: 7px blue solid;
+  min-width: 1220px;
+  min-height: 177px;
+  margin: 50px auto;
+  background-color: #fff;
 }
