@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/certificates.css" />
     <link rel="stylesheet" href="css/training.css" />
     <link rel="stylesheet" href="css/portfolio.css" />
-   <!--<link rel="stylesheet" href="css/reviews.css" />--> 
+    <!--<link rel="stylesheet" href="css/reviews.css" />-->
     <link rel="stylesheet" href="css/communication.css" />
     <link rel="stylesheet" href="css/why-us.css" />
     <link rel="stylesheet" href="css/questions.css" />
@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="css/footer.css" />
     <link rel="stylesheet" href="css/media.css" />
     <link rel="stylesheet" href="css/certificate.css" />
-    <link rel="stylesheet" href="./css/reviews-new.css">
+    <link rel="stylesheet" href="./css/reviews-new.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
@@ -43,7 +43,9 @@
           </a>
           <div class="header__nav">
             <ul class="header__lists">
-              <li class="header__lists-item">Главная</li>
+              <li class="header__lists-item">
+                <a class="header__link" href="./index.html">Главная</a>
+              </li>
               <li class="header__lists-item">Услуги</li>
               <li class="header__lists-item">Отзывы</li>
               <li class="header__lists-item">Портфолио</li>
@@ -397,14 +399,26 @@
             <div class="certificate-image__buttons-prev">
               <img
                 class="certificate-image__buttons-icon"
-                src="images/arrow-prev.svg"
+                src="./images/buttons-new/arow-galka-left.svg"
+                alt="стрелка"
+              />
+
+              <img
+                class="certificate-image__buttons-mobile"
+                src="./images/buttons-new/arow-galka-left-mobile.svg"
                 alt="стрелка"
               />
             </div>
             <div class="certificate-image__buttons-next">
               <img
                 class="certificate-image__buttons-icon"
-                src="images/arrow-next.svg"
+                src="./images/buttons-new/arow-galka-right.svg"
+                alt="стрелка"
+              />
+
+              <img
+                class="certificate-image__buttons-mobile"
+                src="./images/buttons-new/arow-galka-right-mobile.svg"
                 alt="стрелка"
               />
             </div>
@@ -531,13 +545,27 @@
                   <img src="images/lud.png" alt="Award ceremony" />
                 </div>
               </div>
-              <div class="navigation-container" style="outline: 3px red solid">
+              <div class="navigation-container">
                 <div class="swiper-button-prev">
-                  <img src="./icons/button-slider/Ellipse 52 (1).svg" />
+                  <img
+                    class="button-desktop"
+                    src="./images/buttons-new/arow-left.svg"
+                  />
+                  <img
+                    class="button-mobile"
+                    src="./images/buttons-new/arow-left-mobile.svg"
+                  />
                 </div>
                 <div class="swiper-pagination"></div>
                 <div class="swiper-button-next">
-                  <img src="./icons/button-slider/Ellipse 53.svg" />
+                  <img
+                    class="button-desktop"
+                    src="./images/buttons-new/arow-right.svg"
+                  />
+                  <img
+                    class="button-mobile"
+                    src="./images/buttons-new/arow-rigth-mobile.svg"
+                  />
                 </div>
               </div>
             </div>
@@ -545,23 +573,22 @@
         </div>
       </div>
       <section class="reviews">
-
         <div class="container">
-        <h2 class="reviews__title">Отзывы</h2>
+          <h2 class="reviews__title">Отзывы</h2>
 
-        <div class="comments-total-rating"></div>
-        <div class="comments-total-rating-stars">
-          <img
-            class="comments-total-image"
-            src="./images/stars/starun.svg"
-            alt="не задан"
-            title="не задан"
-          />
+          <div class="comments-total-rating"></div>
+          <div class="comments-total-rating-stars">
+            <img
+              class="comments-total-image"
+              src="./images/stars/starun.svg"
+              alt="не задан"
+              title="не задан"
+            />
 
-          <div class="container-comments-area"></div>
-        </div>
+            <div class="container-comments-area"></div>
+          </div>
 
-        <!-- <div class="reviews__descr">
+          <!-- <div class="reviews__descr">
           <span>По вашим отзывам рейтинг мастера 5.0</span>
           <div class="star">
             <img src="./icons/Star 42.png" alt="Star" />
@@ -572,8 +599,8 @@
           </div>
         </div>-->
 
-        <div class="reviews__container">
-         <!-- <div class="numbering">
+          <div class="reviews__container">
+            <!-- <div class="numbering">
             <div class="num active">1</div>
             <div class="num">2</div>
           </div>
@@ -602,11 +629,11 @@
             <div class="num active">1</div>
             <div class="num">2</div>
           </div>-->
-          <a href="#" class="reviews__link"
-            >читать больше отзывов на яндекс картах</a
-          >
+            <a href="#" class="reviews__link"
+              >читать больше отзывов на яндекс картах</a
+            >
+          </div>
         </div>
-      </div>
       </section>
 
       <div class="communication">
@@ -653,13 +680,7 @@
                   />
                   <span class="phonetInput-errors errors"></span>
                 </div>
-                <!--<div class="rating">
-                  <span class="star" data-value="1">&#9734;</span>
-                  <span class="star" data-value="2">&#9734;</span>
-                  <span class="star" data-value="3">&#9734;</span>
-                  <span class="star" data-value="4">&#9734;</span>
-                  <span class="star" data-value="5">&#9734;</span>
-                </div>-->
+
                 <div class="reviews__rating-master">Оцените работу мастера</div>
                 <div class="comments-form-rating"></div>
                 <input type="hidden" name="rate" value="0" />
@@ -674,7 +695,9 @@
                     required
                     placeholder="Оставьте отзыв не более 1000 символов"
                   ></textarea>
-                  <span class="textInput-errors errors"></span>
+                  <span
+                    class="textInput-errors errors errors_padding-top"
+                  ></span>
                 </div>
                 <input
                   name="send"

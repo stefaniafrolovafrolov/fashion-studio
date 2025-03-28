@@ -455,6 +455,10 @@ body {
   padding-top: 60px;
 }
 
+.button-mobile {
+  display: none;
+}
+
 .awards-slider .swiper-pagination-bullet {
   width: 20px !important;
   height: 20px !important;
@@ -494,9 +498,9 @@ body {
   right: auto !important;
   top: auto !important;
   margin: 0 !important;
-  width: 70px;
-  height: 70px;
-  background-color: #cdaf62 !important;
+  width: 50px;
+  height: 50px;
+  /*background-color: #cdaf62 !important;*/
   border-radius: 50% !important;
 }
 /* Стили для иконок стрелок */

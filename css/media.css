@@ -1574,7 +1574,7 @@
   }
 
   body .communication {
-    padding: 0;
+    /* padding: 0;*/
     margin: 0 auto;
   }
 
@@ -1725,7 +1725,6 @@
   }
 
   .communication .form__button {
-    margin-top: 0;
     width: 250px;
   }
 
@@ -2015,6 +2014,7 @@
 
   .communication .form__button {
     margin: auto;
+    margin-top: 20px;
     width: 100%;
   }
 
@@ -2768,6 +2768,12 @@
 }
 
 @media (max-width: 500px) {
+  .button-desktop {
+    display: none;
+  }
+  .button-mobile {
+    display: block;
+  }
   .communication__inner {
     max-width: 400px;
   }
@@ -3228,10 +3234,10 @@
     height: 25px !important;
   }
 
-  .awards-slider .swiper-button-prev img,
+ /* .awards-slider .swiper-button-prev img,
   .awards-slider .swiper-button-next img {
-    width: 9px;
-  }
+    width: 30px;
+  }*/
 
   .awards-slider .swiper-pagination-bullet {
     width: 7px;
@@ -3248,7 +3254,7 @@
   }
 
   .navigation-container {
-    gap: 80px;
+    gap: 30px;
   }
 
   .info {

@@ -9,6 +9,15 @@
   /*outline:  10px red solid;*/
 }
 
+.reviews__rating-master {
+  font-family: Lora;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 0%;
+  font-size: 17px;
+  color: #00000080;
+}
+
 .comments-total-rating {
   color: white;
   font-size: 20px;
