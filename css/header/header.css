@@ -104,6 +104,11 @@
   justify-content: space-between;
 }
 
+.header__link {
+  color: #fff;
+ text-decoration: none;
+}
+
 .header__lists-item {
   margin: 0;
   font-family: Lora;
