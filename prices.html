@@ -6,15 +6,14 @@
     <link rel="stylesheet" href="fonts/stylesheet.css" />
     <link rel="stylesheet" href="./css/header/header.css" />
     <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/questions.css" />
+    <link rel="stylesheet" href="./css/questions.css" />
     <link rel="stylesheet" href="css/location.css" />
     <link rel="stylesheet" href="css/intro.css" />
     <link rel="stylesheet" href="css/page-price.css" />
     <link rel="stylesheet" href="css/footer.css" />
     <link rel="stylesheet" href="css/media.css" />
-    <link rel="stylesheet" href="./css/questions.css">
 
-    <title>Портфолио</title>
+    <title>Услуги</title>
   </head>
   <body class="root">
     <header class="header header__fon-video">
@@ -224,16 +223,14 @@
         <div class="intro-section__navigation">
           <a class="intro-section__navigation-link" href="#">Главная</a>
           <span class="intro-section__navigation-between">/</span>
-          <a class="intro-section__navigation-link" href="#">Портфолио</a>
+          <a class="intro-section__navigation-link" href="#">Услуги</a>
         </div>
         <div class="intro-section__box">
           <div class="intro-section__box-left">
             <div class="intro-section__box-left-description">
-              <h1 class="intro-section__box-left-description-title">
-                Портфолио
-              </h1>
+              <h1 class="intro-section__box-left-description-title">Услуги</h1>
               <p class="intro-section__box-left-description-subtitle">
-                Фотонаших работ
+                Наши услуги
               </p>
             </div>
             <div class="intro-section__box-left-img">
@@ -558,84 +555,84 @@
     </section>
 
     <section class="feed">
-        <div class="container feeds">
-          <div class="feed__wrapper">
-            <div class="feed__content">
-              <h2 class="feed__title">Остались вопросы?</h2>
-              <p class="feed__subtitle">
-                Оставьте заявку и наш менеджер свяжется с вами в ближайшее время
-              </p>
-              <form class="form-vopros" id="contactForm">
-                <div class="form__group">
-                  <label class="form__label">Ваше имя</label>
-                  <input
-                    id="nameInput"
-                    name="name"
-                    minlength="2"
-                    type="text"
-                    class="form__input registration__input"
-                    pattern="^[A-Za-zА-Яа-яЁё]{2,}$"
-                    placeholder="Введите минимум 2 символа"
-                    required
-                  />
-                  <span class="nameInput-errors errors"></span>
-                </div>
-                <div class="form__group">
-                  <label class="form__label">Номер телефона</label>
-                  <input
-                    id="phoneInput"
-                    name="phone"
-                    type="tel"
-                    class="form__input registration__input registration__input_type_errors"
-                    minlength="11"
-                    maxlength="30"
-                    pattern="^(\+7\d{10}|8\d{10})$"
-                    placeholder="+7XXXXXXXXXX или 8XXXXXXXXXX"
-                    required
-                  />
-                  <span class="phoneInput-errors errors"></span>
-                </div>
+      <div class="container feeds">
+        <div class="feed__wrapper">
+          <div class="feed__content">
+            <h2 class="feed__title">Остались вопросы?</h2>
+            <p class="feed__subtitle">
+              Оставьте заявку и наш менеджер свяжется с вами в ближайшее время
+            </p>
+            <form class="form-vopros" id="contactForm">
+              <div class="form__group">
+                <label class="form__label">Ваше имя</label>
+                <input
+                  id="nameInput"
+                  name="name"
+                  minlength="2"
+                  type="text"
+                  class="form__input registration__input"
+                  pattern="^[A-Za-zА-Яа-яЁё]{2,}$"
+                  placeholder="Введите минимум 2 символа"
+                  required
+                />
+                <span class="nameInput-errors errors"></span>
+              </div>
+              <div class="form__group">
+                <label class="form__label">Номер телефона</label>
+                <input
+                  id="phoneInput"
+                  name="phone"
+                  type="tel"
+                  class="form__input registration__input"
+                  minlength="11"
+                  maxlength="30"
+                  pattern="^(\+7\d{10}|8\d{10})$"
+                  placeholder="+7XXXXXXXXXX или 8XXXXXXXXXX"
+                  required
+                />
+                <span class="phoneInput-errors errors"></span>
+              </div>
 
-                <span
-                  class="procedures__message-error"
-                  id="server-error-message"
-                ></span>
+              <span
+                class="procedures__message-error"
+                id="server-error-message"
+              ></span>
 
-                <div class="success-message">
-                  Сообщение успешно отправлено! Мастер свяжется с вами в
-                  близжайшее время!
-                </div>
+              <div class="success-message">
+                Сообщение успешно отправлено! Мастер свяжется с вами в
+                близжайшее время!
+              </div>
 
-                <div
-                  class="timer-message"
-                  id="timerMessage"
-                  style="display: none"
-                >
-                  Пожалуйста, подождите <span id="countdown">60</span> секунд
-                  перед повторной отправкой.
-                </div>
+              <div
+                class="timer-message"
+                id="timerMessage"
+                style="display: none"
+              >
+                Пожалуйста, подождите <span id="countdown">60</span> секунд
+                перед повторной отправкой.
+              </div>
 
-                <button
-                  type="submit"
-                  class="form__button registration__formRegisterButton registration__formRegisterButton_disabled"
-                  id="submitButton"
-                >
-                  Отправить
-                </button>
-              </form>
-            </div>
-            <div class="feed__image">
-              <img
-                src="./images/vopros.png"
-                alt="Fashion Studio Team"
-                class="feed__photo"
-              />
-            </div>
+              <button
+                type="submit"
+                class="form__button registration__formRegisterButton registration__formRegisterButton_disabled"
+                id="submitButton"
+              >
+                Отправить
+              </button>
+            </form>
+          </div>
+          <div class="feed__image">
+            <img
+              src="./images/vopros.png"
+              alt="Fashion Studio Team"
+              class="feed__photo"
+            />
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-  <!--  <section class="feed">
+    <!--  <section class="feed">
       <div class="container feeds">
         <div class="feed__wrapper">
           <div class="feed__content">

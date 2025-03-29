@@ -8,12 +8,14 @@ import {
   buttonSubmitComments,
 } from "../utils/constants.js";
 
-
+console.log('index.js подключен успешно');
 
 const formContactProceduresValidator = new formValidator(
   validationConfig,
   formContactRegProcedures
 );
+
+console.log(formContactProceduresValidator)
 
 const formCommentsValidator = new formValidator(
   validationCommentsConfig,

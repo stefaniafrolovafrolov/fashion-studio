@@ -45,6 +45,7 @@ class formValidator {
   _checkInputValidity(inputElement) {
     if (inputElement.name === "name") {
       if (inputElement.value.length < 2) {
+        console.log("name");
         inputElement.setCustomValidity(
           "Имя должно содержать как минимум 2 символа."
         );
@@ -58,6 +59,7 @@ class formValidator {
     }
     if (inputElement.name === "phone") {
       if (inputElement.value.length < 11) {
+        console.log("phone");
         inputElement.setCustomValidity(
           "Телефон должен содержать как минимум 11 символов."
         );
