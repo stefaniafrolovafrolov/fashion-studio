@@ -8,6 +8,13 @@
   color: #fff;
 }
 
+.reviews__formButtonRew_disabled {
+  border: 1px solid #9c8d8d;
+  color: #494646;
+  background: #fae6e6;
+  cursor: none;
+}
+
 .container.feeds {
   height: 100%;
 }
@@ -221,6 +228,10 @@
 
 .registration__formRegisterButton_disabled:hover {
   background-color: #ffffff;
+}
+
+.reviews__formButtonRew_disabled {
+  background: white;
 }
 
 .errors {

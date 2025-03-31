@@ -339,7 +339,7 @@ function truncateName(name = "") {
 
 function submitComment() {
   const form = document.getElementById("formReviews");
-  console.log(form);
+
   const thanks = document.querySelector(".comments-form-warning");
 
   const errorMessage = document.getElementById("server-error-message");
