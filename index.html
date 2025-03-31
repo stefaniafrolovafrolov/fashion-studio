@@ -65,22 +65,31 @@
           </div>
 
           <div class="header__container-button">
-            <a href="#">
+            <a
+              href="https://wa.me/+79261861711"
+              target="_blank"
+              rel="noreferrer"
+            >
               <img
                 class="header__socialIcon"
                 src="./icons/whatsapp_4494494.png"
                 alt="whatsapp"
             /></a>
 
-            <a href="#">
+            <a
+              href="https://vk.com/lomteva.lyuda"
+              target="_blank"
+              rel="noreferrer"
+            >
               <img
                 class="header__socialIcon"
                 src="./icons/vkontakte_44945172.png"
                 alt="vkontakte"
             /></a>
-            <button class="header__socialBtn" id="openPopup">
-              Онлайн запись
-            </button>
+
+            <a href="tel:+79261861711" class="header__socialBtn">
+              <span class="header__textTelephone">Онлайн запись</span>
+            </a>
           </div>
         </div>
 
@@ -90,7 +99,7 @@
             Студия перманентного макияжа Людмилы Ломтевой
           </p>
 
-          <div class="header__button-circle">
+          <button class="header__button-circle">
             <p class="header__text">Получить</p>
             <p class="header__sale">скидку 10%</p>
             <p class="header__visit">на первый визит</p>
@@ -104,14 +113,14 @@
               src="./icons/Arrow-2-tablet.png"
               alt="Стрелка вправо"
             />
-          </div>
+          </button>
         </div>
 
         <a
-          href="tel:+791"
+          href="tel:+79261861711"
           class="pulse-button"
           role="button"
-          aria-label="Позвонить на номер +791"
+          aria-label="Позвонить на номер +79261861711"
         >
           <span class="pulse-button__icon"></span>
           <span class="pulse-button__text">Онлайн запись</span>
@@ -121,53 +130,19 @@
           <span class="pulse-button__rings"></span>
         </a>
       </header>
-      <!--<header class="header" style="background: 3px red solid;">
-      <nav class="nav container dark" >
-        <a href="/"
-          ><img class="nav-logo" src="./icons/logo.png" alt="logo"
-        /></a>
-        <p class="mob slogan">Fashion Studio by Lomteva Lyudmila</p>
-        <div class="nav__link">
-          <a class="nav__link-item active" style="background: 3px red solid;" href="#">Главная</a>
-          <a class="nav__link-item" href="#">Услуги</a>
-          <a class="nav__link-item" href="#">Отзывы</a>
-          <a class="nav__link-item" href="#">Портфолио</a>
-          <a class="nav__link-item" href="#">Контакты</a>
-          <a class="nav__link-item" href="#">Блог</a>
-        </div>
-        <div class="nav__social">
-          <a href="">
-            <img
-              class="nav__socialIcon"
-              src="./icons/whatsapp_4494494.png"
-              alt="whatsapp"
-          /></a>
-
-          <a href="#">
-            <img
-              class="nav__socialIcon"
-              src="./icons/vkontakte_4494517 2.png"
-              alt="vkontakte"
-          /></a>
-          <button class="nav__socialBtn" id="openPopup">Запись онлайн</button>
-        </div>
-        <div class="mobile-header__gamburger-button" id="gamb">
-          <div class="mobile-header__nav-border-button"></div>
-          <div class="mobile-header__nav-border-button"></div>
-          <div class="mobile-header__nav-border-button"></div>
-        </div>
-      </nav>
-    </header>-->
 
       <div class="mobile-header">
         <div class="mobile-header__wrapper">
-          <a href="./index.html"
+          <a class="mobile-header__link" href="./index.html"
             ><img
               class="mobile-header__logo"
               src="./icons/logo.png"
               alt="Логотип"
-          /></a>
-          <p class="mobile-header__brand">Fashion Studio by Lomteva Lyudmila</p>
+            />
+            <p class="mobile-header__brand">
+              Fashion Studio by Lomteva Lyudmila
+            </p>
+          </a>
         </div>
 
         <div class="mobile-header__gamburger-button" id="gamb">
@@ -181,43 +156,60 @@
         <div class="mobile-menu__content">
           <ul class="mobile-menu__list">
             <li class="mobile-menu__item">
-              <a href="#" class="mobile-menu__link">Главная</a>
+              <a href="./index.html" class="mobile-menu__link">Главная</a>
             </li>
             <li class="mobile-menu__item">
-              <a href="#" class="mobile-menu__link">Отзывы </a>
+              <a href="./reviews.html" class="mobile-menu__link">Отзывы</a>
             </li>
             <li class="mobile-menu__item">
-              <a href="#" class="mobile-menu__link">Услуги </a>
+              <a href="./prices.html" class="mobile-menu__link">Услуги</a>
             </li>
             <li class="mobile-menu__item">
-              <a href="#" class="mobile-menu__link">Портфолио</a>
+              <a href="./portfolio.html" class="mobile-menu__link">Портфолио</a>
             </li>
             <li class="mobile-menu__item">
-              <a href="#" class="mobile-menu__link">Контакты</a>
+              <a href="./contacts.html" class="mobile-menu__link">Контакты</a>
             </li>
             <li class="mobile-menu__item">
-              <a href="#" class="mobile-menu__link">Блог</a>
+              <a href="./blog.html" class="mobile-menu__link">Блог</a>
             </li>
           </ul>
           <h3 class="mobile-menu__mobile-addres">Адреса наших салонов :</h3>
           <div class="mobile-menu__mobile-addres-wrapper">
             <p class="mobile-menu__mobile-addres-text">
-              Озеры: пл. Коммунистическая 4б . 3 этаж
+              Озеры: пл. Коммунистическая 4 б 3 этаж
             </p>
             <p class="mobile-menu__mobile-addres-text">
               Москва : Летчика Грицевца 14 а
             </p>
-            <p class="mobile-menu__mobile-phone-number">+7 (926) 186-17-11</p>
+
+            <a
+              href="tel:+79261861711"
+              class="mobile-menu__mobile-phone-number"
+              role="button"
+              aria-label="Позвонить на номер +79261861711"
+            >
+              +7 (926) 186-17-11</a
+            >
+
             <div class="mobile-menu__mobile-soc-wrapper">
-              <a href="/"
+              <a
+                href="https://wa.me/+79261861711"
+                target="_blank"
+                rel="noreferrer"
                 ><img
                   class="mobile-menu__icon"
                   src="./icons/whatsapp_4494494.png"
+                  alt="кнопка ватсапа"
               /></a>
-              <a href="/"
+              <a
+                href="https://vk.com/lomteva.lyuda"
+                target="_blank"
+                rel="noreferrer"
                 ><img
                   class="mobile-menu__icon"
                   src="./icons/vkontakte_44945172.png"
+                  alt="кнопка в контакте"
               /></a>
             </div>
           </div>
@@ -713,7 +705,7 @@
                   name="send"
                   id="submitButtonComments"
                   type="submit"
-                  class="form__button reviews__formButtonRew reviews__formButtonRew_disabled"
+                  class="reviews__formButtonRew reviews__formButtonRew_disabled"
                   onclick="submitComment()"
                   type="button"
                   value="Оставить отзыв"

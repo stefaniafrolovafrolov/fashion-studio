@@ -113,7 +113,20 @@
   outline: none;
   background-color: #e2dcdc;
 }
-.communication .form__button {
+/*.reviews__formButtonRew {
+  width: 250px;
+  height: 50px;
+  background-color: #cdaf62;
+  font-family: Lora;
+  font-size: 26px;
+  font-weight: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #fff;
+}*/
+
+.reviews__formButtonRew {
   width: 250px;
   height: 50px;
   background-color: #cdaf62;
@@ -130,4 +143,17 @@
   width: 400px;
   height: 400px;
   display: flex;
+}
+
+.reviews__formButtonRew_valid {
+  background-color: #cdaf62;
+  border: none;
+  color: fff;
+}
+
+.reviews__formButtonRew_disabled {
+  border: 1px solid #9c8d8d;
+  color: #494646;
+  background: #fae6e6;
+  cursor: none;
 }

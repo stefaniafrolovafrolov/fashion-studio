@@ -3,18 +3,6 @@
   padding: 70px 0 70px 0;
 }
 
-.reviews__formButtonRew_valid {
-  background: #c9a96e;
-  color: #fff;
-}
-
-.reviews__formButtonRew_disabled {
-  border: 1px solid #9c8d8d;
-  color: #494646;
-  background: #fae6e6;
-  cursor: none;
-}
-
 .container.feeds {
   height: 100%;
 }
@@ -156,11 +144,6 @@
   color: rgba(0, 0, 0, 0.8);
 }
 
-.registration__formRegisterButton_valid {
-  background: #1a07c5;
-  color: #fff;
-}
-
 .form__input_type_errors {
   border: 1px solid #ff0000;
 }
@@ -230,8 +213,9 @@
   background-color: #ffffff;
 }
 
-.reviews__formButtonRew_disabled {
-  background: white;
+.registration__formRegisterButton_valid {
+  background: #c9a96e;
+  color: #fff;
 }
 
 .errors {

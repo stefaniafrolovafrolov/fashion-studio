@@ -33,8 +33,8 @@
 }
 
 .header__container {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   width: 1620px;
   display: flex;
   justify-content: space-between;
@@ -106,7 +106,7 @@
 
 .header__link {
   color: #fff;
- text-decoration: none;
+  text-decoration: none;
 }
 
 .header__lists-item {
@@ -173,11 +173,17 @@
   width: 200px;
   height: 40px;
   background-color: #cdaf62;
+  display: flex;
+}
+
+.header__textTelephone {
   font-family: Lora;
   font-size: 20px;
   letter-spacing: normal;
   text-align: center;
   color: #fff;
+  align-self: center;
+  margin: 0 auto;
 }
 
 .header__title {
@@ -297,6 +303,14 @@
     width: 230px;
     padding-left: 30px;
     /* border: solid 3px red;*/
+  }
+
+  .mobile-header__link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 43px;
+    width: 230px;
   }
 
   .mobile-header__logo {

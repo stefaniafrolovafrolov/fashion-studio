@@ -134,7 +134,7 @@ header {
   align-items: stretch;
 }
 @media (max-width: 360px) {
-  .photogallery-section__tabs-list.row {
+  .photogallery-section__tabs-list.row 
     flex-direction: column;
     border-bottom: transparent;
   }
@@ -190,12 +190,7 @@ header {
 .photogallery-section__tabs-link.row {
   padding: 20px;
 }
-@media (max-width: 1240px) {
-  .photogallery-section__tabs-link.row {
-    font-size: 24px;
-    line-height: 1;
-  }
-}
+
 @media (max-width: 960px) {
   .photogallery-section__tabs-link.row2 {
     padding: 12px 20px;

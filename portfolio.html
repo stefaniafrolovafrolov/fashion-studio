@@ -31,32 +31,49 @@
         </a>
         <div class="header__nav">
           <ul class="header__lists">
-            <li class="header__lists-item">Главная</li>
-            <li class="header__lists-item">Услуги</li>
-            <li class="header__lists-item">Отзывы</li>
-            <li class="header__lists-item">Портфолио</li>
-            <li class="header__lists-item">Контакты</li>
-            <li class="header__lists-item">Блог</li>
+            <li class="header__lists-item">
+              <a class="header__link" href="./index.html">Главная</a>
+            </li>
+            <li class="header__lists-item">
+              <a class="header__link" href="./prices.html">Услуги</a>
+            </li>
+            <li class="header__lists-item">
+              <a class="header__link" href="./reviews.html">Отзывы</a>
+            </li>
+            <li class="header__lists-item">
+              <a class="header__link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="header__lists-item">
+              <a class="header__link" href="./contacts.html">Контакты</a>
+            </li>
+            <li class="header__lists-item">
+              <a class="header__link" href="./blog.html">Блог</a>
+            </li>
           </ul>
         </div>
 
         <div class="header__container-button">
-          <a href="#">
+          <a href="https://wa.me/+79261861711" target="_blank" rel="noreferrer">
             <img
               class="header__socialIcon"
               src="./icons/whatsapp_4494494.png"
               alt="whatsapp"
           /></a>
 
-          <a href="#">
+          <a
+            href="https://vk.com/lomteva.lyuda"
+            target="_blank"
+            rel="noreferrer"
+          >
             <img
               class="header__socialIcon"
               src="./icons/vkontakte_44945172.png"
               alt="vkontakte"
           /></a>
-          <button class="header__socialBtn" id="openPopup">
-            Онлайн запись
-          </button>
+
+          <a href="tel:+79261861711" class="header__socialBtn">
+            <span class="header__textTelephone">Онлайн запись</span>
+          </a>
         </div>
       </div>
 
@@ -99,13 +116,14 @@
     </header>
     <div class="mobile-header">
       <div class="mobile-header__wrapper">
-        <a href="./index.html"
+        <a class="mobile-header__link" href="./index.html"
           ><img
             class="mobile-header__logo"
             src="./icons/logo.png"
             alt="Логотип"
-        /></a>
-        <p class="mobile-header__brand">Fashion Studio by Lomteva Lyudmila</p>
+          />
+          <p class="mobile-header__brand">Fashion Studio by Lomteva Lyudmila</p>
+        </a>
       </div>
 
       <div class="mobile-header__gamburger-button" id="gamb">
@@ -119,43 +137,60 @@
       <div class="mobile-menu__content">
         <ul class="mobile-menu__list">
           <li class="mobile-menu__item">
-            <a href="#" class="mobile-menu__link">Главная</a>
+            <a href="./index.html" class="mobile-menu__link">Главная</a>
           </li>
           <li class="mobile-menu__item">
-            <a href="#" class="mobile-menu__link">Отзывы </a>
+            <a href="./reviews.html" class="mobile-menu__link">Отзывы</a>
           </li>
           <li class="mobile-menu__item">
-            <a href="#" class="mobile-menu__link">Услуги </a>
+            <a href="./prices.html" class="mobile-menu__link">Услуги</a>
           </li>
           <li class="mobile-menu__item">
-            <a href="#" class="mobile-menu__link">Портфолио</a>
+            <a href="./portfolio.html" class="mobile-menu__link">Портфолио</a>
           </li>
           <li class="mobile-menu__item">
-            <a href="#" class="mobile-menu__link">Контакты</a>
+            <a href="./contacts.html" class="mobile-menu__link">Контакты</a>
           </li>
           <li class="mobile-menu__item">
-            <a href="#" class="mobile-menu__link">Блог</a>
+            <a href="./blog.html" class="mobile-menu__link">Блог</a>
           </li>
         </ul>
         <h3 class="mobile-menu__mobile-addres">Адреса наших салонов :</h3>
         <div class="mobile-menu__mobile-addres-wrapper">
           <p class="mobile-menu__mobile-addres-text">
-            Озеры: пл. Коммунистическая 4б . 3 этаж
+            Озеры: пл. Коммунистическая 4 б 3 этаж
           </p>
           <p class="mobile-menu__mobile-addres-text">
             Москва : Летчика Грицевца 14 а
           </p>
-          <p class="mobile-menu__mobile-phone-number">+7 (926) 186-17-11</p>
+
+          <a
+            href="tel:+79261861711"
+            class="mobile-menu__mobile-phone-number"
+            role="button"
+            aria-label="Позвонить на номер +79261861711"
+          >
+            +7 (926) 186-17-11</a
+          >
+
           <div class="mobile-menu__mobile-soc-wrapper">
-            <a href="/"
+            <a
+              href="https://wa.me/+79261861711"
+              target="_blank"
+              rel="noreferrer"
               ><img
                 class="mobile-menu__icon"
                 src="./icons/whatsapp_4494494.png"
+                alt="кнопка ватсапа"
             /></a>
-            <a href="/"
+            <a
+              href="https://vk.com/lomteva.lyuda"
+              target="_blank"
+              rel="noreferrer"
               ><img
                 class="mobile-menu__icon"
                 src="./icons/vkontakte_44945172.png"
+                alt="кнопка в контакте"
             /></a>
           </div>
         </div>
@@ -225,9 +260,11 @@
     <section class="intro-section">
       <div class="container">
         <div class="intro-section__navigation">
-          <a class="intro-section__navigation-link" href="#">Главная</a>
+          <a class="intro-section__navigation-link" href="./index.html"
+            >Главная</a
+          >
           <span class="intro-section__navigation-between">/</span>
-          <a class="intro-section__navigation-link" href="#">Портфолио</a>
+          <p class="intro-section__navigation-link">Портфолио</p>
         </div>
         <div class="intro-section__box">
           <div class="intro-section__box-left">
@@ -248,9 +285,14 @@
             <span class="intro-section__box-btn-text white">скидку 10% </span>
             <span class="intro-section__box-btn-text">на первый визит</span>
             <img
-              class="intro-section__box-btn-icon"
-              src="icons/arrow-btn.svg"
-              alt="стрелка"
+              class="header__arrow"
+              src="./icons/Arrow-1.png"
+              alt="Стрелка вправо"
+            />
+            <img
+              class="header__arrow-tablet"
+              src="./icons/Arrow-2-tablet.png"
+              alt="Стрелка вправо"
             />
           </div>
           <div class="intro-section__box-right">
