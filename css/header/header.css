@@ -90,7 +90,6 @@
   border-radius: 100%;
   background-color: #cdaf62;
   gap: 15px;
-
   cursor: pointer;
 }
 
@@ -301,7 +300,7 @@
     justify-content: space-between;
     height: 43px;
     width: 230px;
-    padding-left: 30px;
+    padding-left: 10px;
     /* border: solid 3px red;*/
   }
 
@@ -310,7 +309,7 @@
     align-items: center;
     justify-content: space-between;
     height: 43px;
-    width: 230px;
+    width: 210px;
   }
 
   .mobile-header__logo {

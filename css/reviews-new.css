@@ -1,5 +1,5 @@
 .reviews {
-  padding-top: 60px;
+  padding-top: 20px;
   padding-bottom: 50px;
   display: flex;
   flex-direction: column;
@@ -42,7 +42,7 @@
 }
 
 .reviews__title {
-  padding-top: 60px;
+  padding-top: 20px;
   font-family: Lora;
   font-size: 50px;
   font-weight: normal;

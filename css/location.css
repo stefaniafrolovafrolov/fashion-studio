@@ -7,6 +7,7 @@
   text-align: center;
   position: relative;
   top: 178px;
+  white-space: nowrap;
 }
 
 .location__subheading {

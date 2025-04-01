@@ -3017,6 +3017,11 @@
     padding-bottom: 10px;
     font-size: 9px;
   }
+
+  .location__heading {
+    font-size: 30px;
+    
+  }
 }
 
 @media (max-width: 410px) {
@@ -3234,7 +3239,7 @@
     height: 25px !important;
   }
 
- /* .awards-slider .swiper-button-prev img,
+  /* .awards-slider .swiper-button-prev img,
   .awards-slider .swiper-button-next img {
     width: 30px;
   }*/
@@ -3379,6 +3384,7 @@
 
   .location__heading {
     font-size: 20px;
+    top: 0;
   }
 
   .location__subheading {
@@ -3400,10 +3406,6 @@
   .location__subheading {
     bottom: -2px;
     left: 26px;
-  }
-
-  .location__heading {
-    top: 0;
   }
 
   .footer .conteiner .studia__title {
