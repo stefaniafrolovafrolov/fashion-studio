@@ -6,6 +6,22 @@
 .photogallery-section__tabs {
   border-radius: 9px;
 }
+
+.modal__form-item-input {
+  border: 1px solid #000;
+  width: 476px;
+  height: 53px;
+  padding: 0px 0px 0px 15px;
+  font-size: 32px;
+  outline: none;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.modal__form-input-error {
+  border: 1px solid #ff0000;
+}
+
+
 @media (max-width: 834px) {
   .photogallery-section {
     padding: 0px 0px 50px 0px;
@@ -99,7 +115,7 @@
 }
 
 .photogallery-section__tabs-item {
- /* outline: red solid 5px;*/
+  /* outline: red solid 5px;*/
   flex: 1;
   height: inherit;
   display: flex;
@@ -744,7 +760,7 @@
 .modal__header {
   display: flex;
   width: 100%;
-  column-gap: 50px;
+  column-gap: 190px;
   justify-content: center;
   align-items: center;
   background: #323232;
@@ -902,7 +918,7 @@
 .modal__description-title {
   font-weight: 400;
   font-size: 40px;
-  color: #000;
+  color: #3e414b;
   margin-bottom: 15px;
 }
 @media (max-width: 1536px) {
@@ -940,36 +956,13 @@
 
 .modal__description-subtitle {
   font-weight: 400;
-  font-size: 24px;
+  font-size: 16px;
   text-align: center;
   color: rgba(0, 0, 0, 0.5);
 }
-@media (max-width: 1280px) {
-  .modal__description-subtitle {
-    font-size: 21px;
-  }
-}
-@media (max-width: 1240px) {
-  .modal__description-subtitle {
-    font-size: 22px;
-  }
-}
 
-@media (max-width: 834px) {
-  .modal__description-subtitle {
-    font-size: 20px;
-  }
-}
-@media (max-width: 620px) {
-  .modal__description-subtitle {
-    font-size: 15px;
-  }
-}
-@media (max-width: 360px) {
-  .modal__description-subtitle {
-    font-size: 10px;
-  }
-}
+
+
 
 .modal__form {
   display: flex;
@@ -1018,6 +1011,40 @@
   flex-direction: column;
   margin-bottom: 30px;
 }
+
+.procedures__message-error-formPopup {
+  display: none;
+  background: white;
+  color: red;
+  font-family: Inter;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 15px;
+  /* padding-left: 25px; */
+  padding-top: 10px;
+  text-align: center;
+}
+
+.success-message-formPopup {
+  background: #5ad84a;
+  margin-top: 10px;
+  color: white;
+  display: none;
+  text-align: center;
+  padding: 7px 7px;
+  max-width: 350px;
+}
+
+.timer-message-formPopup {
+  background: #5ad84a;
+  margin-top: 10px;
+  color: white;
+  display: none;
+  text-align: center;
+  padding: 7px 7px;
+  max-width: 350px;
+}
+
 @media (max-width: 1880px) {
   .modal__form-item {
     margin-bottom: 20px;
@@ -1095,39 +1122,34 @@
   }
 }
 
-.modal__form-item-inp {
-  border: 1px solid #000;
-  width: 476px;
-  height: 53px;
-  padding: 0px 0px 0px 15px;
-  font-size: 32px;
-  outline: none;
-  color: rgba(0, 0, 0, 0.4);
-}
+
+
+
+
 @media (max-width: 1536px) {
-  .modal__form-item-inp {
+  .modal__form-item-input {
     width: 430px;
     height: 42px;
     font-size: 27px;
   }
 }
 @media (max-width: 1280px) {
-  .modal__form-item-inp {
+  .modal__form-item-input {
     width: 380px;
     height: 38px;
     font-size: 25px;
   }
 }
 @media (max-width: 1240px) {
-  .modal__form-item-inp {
+  .modal__form-item-input {
     width: 421px;
     height: 45px;
     font-size: 25px;
   }
 }
 @media (max-width: 834px) {
-  .modal__form-item-inp {
-    border: 0.69px solid #000;
+  .modal__form-item-input {
+   
     width: 329px;
     height: 40px;
     padding: 0 0 0 10px;
@@ -1135,76 +1157,96 @@
   }
 }
 @media (max-width: 620px) {
-  .modal__form-item-inp {
+  .modal__form-item-input {
     width: 260px;
     height: 35px;
     font-size: 18px;
   }
 }
 @media (max-width: 360px) {
-  .modal__form-item-inp {
+  .modal__form-item-input {
     width: 200px;
     height: 30px;
     font-size: 12px;
   }
 }
 
-.modal__form-item-inp::placeholder {
+.modal__form-item-input::placeholder {
   font-weight: 400;
   font-size: 32px;
   color: rgba(0, 0, 0, 0.4);
 }
 @media (max-width: 1536px) {
-  .modal__form-item-inp::placeholder {
+  .modal__form-item-input::placeholder {
     font-size: 27px;
   }
 }
 @media (max-width: 1280px) {
-  .modal__form-item-inp::placeholder {
+  .modal__form-item-input::placeholder {
     font-size: 22px;
   }
 }
 @media (max-width: 1240px) {
-  .modal__form-item-inp::placeholder {
+  .modal__form-item-input::placeholder {
     font-size: 25px;
   }
 }
 @media (max-width: 834px) {
-  .modal__form-item-inp::placeholder {
+  .modal__form-item-input::placeholder {
     font-size: 22px;
   }
 }
 @media (max-width: 620px) {
-  .modal__form-item-inp::placeholder {
+  .modal__form-item-input::placeholder {
     font-size: 18px;
   }
 }
 @media (max-width: 360px) {
-  .modal__form-item-inp::placeholder {
+  .modal__form-item-input::placeholder {
     font-size: 12px;
   }
 }
 
-.modal__form-btn {
+.registration__formRegisterButton-formPopup_valid {
+  background: #c9a96e;
+  color: #fff;
+}
+
+.modal__form-button {
   width: 476px;
   height: 74px;
   background: #cdaf62;
   font-weight: 400;
   font-size: 36px;
-  color: #000;
+  color: #fff;
   border: none;
   outline: none;
   cursor: pointer;
   margin-top: 30px;
 }
+
+.registration__formRegisterButton-formPopup_disabled {
+  border: 1px solid #9c8d8d;
+  background-color: #fff;
+  color: #494646;
+  cursor: not-allowed;
+}
+
+.registration__formRegisterButton-formPopup_disabled:hover {
+  border: 1px solid #9c8d8d;
+  background-color: #fae6e6;
+  color: #494646;
+  cursor: not-allowed;
+}
+
 @media (max-width: 1880px) {
-  .modal__form-btn {
+  .modal__form-button {
     margin-top: 15px;
     height: 66px;
   }
 }
 @media (max-width: 1536px) {
-  .modal__form-btn {
+  .modal__form-button {
     width: 430px;
     font-size: 30px;
     height: 62px;
@@ -1212,14 +1254,14 @@
   }
 }
 @media (max-width: 1280px) {
-  .modal__form-btn {
+  .modal__form-button {
     width: 380px;
     height: 52px;
     font-size: 27px;
   }
 }
 @media (max-width: 1240px) {
-  .modal__form-btn {
+  .modal__form-button {
     width: 421px;
     height: 55px;
     font-size: 25px;
@@ -1227,7 +1269,7 @@
   }
 }
 @media (max-width: 834px) {
-  .modal__form-btn {
+  .modal__form-button {
     width: 328px;
     height: 51px;
     font-size: 24px;
@@ -1235,14 +1277,14 @@
   }
 }
 @media (max-width: 620px) {
-  .modal__form-btn {
+  .modal__form-button {
     width: 260px;
     height: 45px;
     font-size: 20px;
   }
 }
 @media (max-width: 360px) {
-  .modal__form-btn {
+  .modal__form-button {
     width: 200px;
     height: 30px;
     font-size: 16px;

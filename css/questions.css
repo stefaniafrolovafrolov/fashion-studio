@@ -181,6 +181,11 @@
   text-align: center;
 }
 
+.registration__formRegisterButton_valid {
+  background: #c9a96e;
+  color: #fff;
+}
+
 .form__button {
   width: 250px;
   height: 50px;
@@ -210,12 +215,10 @@
 }
 
 .registration__formRegisterButton_disabled:hover {
-  background-color: #ffffff;
-}
-
-.registration__formRegisterButton_valid {
-  background: #c9a96e;
-  color: #fff;
+  border: 1px solid #9c8d8d;
+  background-color: #fae6e6;
+  color: #494646;
+  cursor: not-allowed;
 }
 
 .errors {

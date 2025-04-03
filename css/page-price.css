@@ -963,7 +963,7 @@ header {
 .modal__description-title {
   font-weight: 400;
   font-size: 40px;
-  color: #000;
+  color: #3e414b;
   margin-bottom: 15px;
 }
 @media (max-width: 1536px) {
@@ -1001,7 +1001,7 @@ header {
 
 .modal__description-subtitle {
   font-weight: 400;
-  font-size: 24px;
+  font-size: 16px;
   text-align: center;
   color: rgba(0, 0, 0, 0.5);
 }
@@ -1156,7 +1156,7 @@ header {
   }
 }
 
-.modal__form-item-inp {
+.modal__form-item-input {
   border: 1px solid #000;
   width: 476px;
   height: 53px;
@@ -1165,29 +1165,33 @@ header {
   outline: none;
   color: rgba(0, 0, 0, 0.4);
 }
+
+.modal__form-input-error {
+  border: 1px solid #ff0000;
+}
 @media (max-width: 1536px) {
-  .modal__form-item-inp {
+  .modal__form-item-input {
     width: 430px;
     height: 42px;
     font-size: 27px;
   }
 }
 @media (max-width: 1280px) {
-  .modal__form-item-inp {
+  .modal__form-item-input {
     width: 380px;
     height: 38px;
     font-size: 25px;
   }
 }
 @media (max-width: 1240px) {
-  .modal__form-item-inp {
+  .modal__form-item-input {
     width: 421px;
     height: 45px;
     font-size: 25px;
   }
 }
 @media (max-width: 834px) {
-  .modal__form-item-inp {
+  .modal__form-item-input {
     border: 0.69px solid #000;
     width: 329px;
     height: 40px;
@@ -1196,57 +1200,57 @@ header {
   }
 }
 @media (max-width: 620px) {
-  .modal__form-item-inp {
+  .modal__form-item-input {
     width: 260px;
     height: 35px;
     font-size: 18px;
   }
 }
 @media (max-width: 360px) {
-  .modal__form-item-inp {
+  .modal__form-item-input {
     width: 200px;
     height: 30px;
     font-size: 12px;
   }
 }
 
-.modal__form-item-inp::placeholder {
+.modal__form-item-input::placeholder {
   font-weight: 400;
   font-size: 32px;
   color: rgba(0, 0, 0, 0.4);
 }
 @media (max-width: 1536px) {
-  .modal__form-item-inp::placeholder {
+  .modal__form-item-input::placeholder {
     font-size: 27px;
   }
 }
 @media (max-width: 1280px) {
-  .modal__form-item-inp::placeholder {
+  .modal__form-item-input::placeholder {
     font-size: 22px;
   }
 }
 @media (max-width: 1240px) {
-  .modal__form-item-inp::placeholder {
+  .modal__form-item-input::placeholder {
     font-size: 25px;
   }
 }
 @media (max-width: 834px) {
-  .modal__form-item-inp::placeholder {
+  .modal__form-item-input::placeholder {
     font-size: 22px;
   }
 }
 @media (max-width: 620px) {
-  .modal__form-item-inp::placeholder {
+  .modal__form-item-input::placeholder {
     font-size: 18px;
   }
 }
 @media (max-width: 360px) {
-  .modal__form-item-inp::placeholder {
+  .modal__form-item-input::placeholder {
     font-size: 12px;
   }
 }
 
-.modal__form-btn {
+.modal__form-button {
   width: 476px;
   height: 74px;
   background: #cdaf62;
@@ -1259,13 +1263,13 @@ header {
   margin-top: 30px;
 }
 @media (max-width: 1880px) {
-  .modal__form-btn {
+  .modal__form-button {
     margin-top: 15px;
     height: 66px;
   }
 }
 @media (max-width: 1536px) {
-  .modal__form-btn {
+  .modal__form-button {
     width: 430px;
     font-size: 30px;
     height: 62px;
@@ -1273,14 +1277,14 @@ header {
   }
 }
 @media (max-width: 1280px) {
-  .modal__form-btn {
+  .modal__form-button {
     width: 380px;
     height: 52px;
     font-size: 27px;
   }
 }
 @media (max-width: 1240px) {
-  .modal__form-btn {
+  .modal__form-button {
     width: 421px;
     height: 55px;
     font-size: 25px;
@@ -1288,7 +1292,7 @@ header {
   }
 }
 @media (max-width: 834px) {
-  .modal__form-btn {
+  .modal__form-button {
     width: 328px;
     height: 51px;
     font-size: 24px;
@@ -1296,14 +1300,14 @@ header {
   }
 }
 @media (max-width: 620px) {
-  .modal__form-btn {
+  .modal__form-button {
     width: 260px;
     height: 45px;
     font-size: 20px;
   }
 }
 @media (max-width: 360px) {
-  .modal__form-btn {
+  .modal__form-button {
     width: 200px;
     height: 30px;
     font-size: 16px;
