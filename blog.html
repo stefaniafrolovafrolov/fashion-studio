@@ -102,18 +102,18 @@
       </div>
 
       <a
-      href="tel:+79261861711"
-      class="pulse-button"
-      role="button"
-      aria-label="Позвонить на номер +79261861711"
-    >
-      <span class="pulse-button__icon"></span>
-      <span class="pulse-button__text">Онлайн запись</span>
+        href="tel:+79261861711"
+        class="pulse-button"
+        role="button"
+        aria-label="Позвонить на номер +79261861711"
+      >
+        <span class="pulse-button__icon"></span>
+        <span class="pulse-button__text">Онлайн запись</span>
 
-      <span class="pulse-button__rings"></span>
-      <span class="pulse-button__rings"></span>
-      <span class="pulse-button__rings"></span>
-    </a>
+        <span class="pulse-button__rings"></span>
+        <span class="pulse-button__rings"></span>
+        <span class="pulse-button__rings"></span>
+      </a>
     </header>
 
     <div class="mobile-header">
@@ -787,56 +787,6 @@
         </div>
       </div>
     </section>
-    <div class="modal">
-      <div class="modal__inner">
-        <div class="modal__header">
-          <div class="modal__header-logo">
-            <img class="modal__header-logo-img" src="images/logo.png" alt="" />
-          </div>
-          <div class="modal__header-text">
-            <p>
-              Fashion Studio by <br />
-              Lomteva Lyudmila
-            </p>
-          </div>
-        </div>
-        <div class="modal__description">
-          <p class="modal__description-title">
-            Хотите скидку 10% <br />
-            на первый визит?
-          </p>
-          <p class="modal__description-subtitle">
-            Оставьте ваши данные и наш менеджер<br />
-            свяжеться с вами
-          </p>
-        </div>
-        <form class="modal__form">
-          <div class="modal__form-item">
-            <span class="modal__form-item-text">Ваше имя</span>
-            <input
-              class="modal__form-item-input"
-              type="text"
-              placeholder="Наталья"
-              required
-            />
-          </div>
-          <div class="modal__form-item">
-            <span class="modal__form-item-text">Номер телефона</span>
-            <input
-              class="modal__form-item-input"
-              type="tel"
-              placeholder="+7 (952) 213-66-02"
-              required
-            />
-          </div>
-          <button class="modal__form-button">Записаться</button>
-        </form>
-        <div class="modal-close">
-          <img src="icons/close-icon.png" alt="" />
-        </div>
-      </div>
-    </div>
-    <div class="overlay"></div>
 
     <footer class="footer">
       <div class="conteiner">
@@ -898,13 +848,107 @@
           </div>
         </div>
       </div>
+      <div class="modal">
+        <div class="modal__inner">
+          <div class="modal__header">
+            <div class="modal__header-logo">
+              <img
+                class="modal__header-logo-img"
+                src="images/logo.png"
+                alt=""
+              />
+            </div>
+            <div class="modal__header-text">
+              <p>Fashion Studio by <br />Lomteva Lyudmila</p>
+            </div>
+          </div>
+          <div class="modal__description">
+            <p class="modal__description-title">
+              Хотите скидку 10% <br />
+              на первый визит?
+            </p>
+            <p class="modal__description-subtitle">
+              Оставьте ваши данные и наш менеджер<br />
+              свяжеться с вами
+            </p>
+          </div>
+          <form
+            class="modal__form"
+            id="contactFormPopup"
+            name="contactFormPopup"
+          >
+            <div class="modal__form-item">
+              <span class="modal__form-item-text">Ваше имя</span>
+              <input
+                class="modal__form-item-input"
+                id="nameInput"
+                name="name"
+                minlength="2"
+                type="text"
+                pattern="^[A-Za-zА-Яа-яЁё]{2,}$"
+                placeholder="Введите минимум 2 символа"
+                required
+              />
+              <span class="nameInput-errors errors"></span>
+            </div>
+            <div class="modal__form-item">
+              <span class="modal__form-item-text">Номер телефона</span>
+              <input
+                id="phoneInput"
+                name="phone"
+                class="modal__form-item-input"
+                type="tel"
+                minlength="11"
+                maxlength="30"
+                pattern="^(\+7\d{10}|8\d{10})$"
+                placeholder="+7XXXXXXXXXX или 8XXXXXXXXXX"
+                required
+              />
+              <span class="phoneInput-errors errors"></span>
+            </div>
+
+            <span
+              class="procedures__message-error-formPopup"
+              id="server-error-message-formPopup"
+            ></span>
+
+            <div class="success-message-formPopup">
+              Сообщение успешно отправлено! Мастер свяжется с вами в близжайшее
+              время!
+            </div>
+
+            <div
+              class="timer-message-formPopup"
+              id="timerMessage-formPopup"
+              style="display: none"
+            >
+              Пожалуйста, подождите
+              <span id="countdown-formPopup">60</span> секунд перед повторной
+              отправкой.
+            </div>
+            <button
+              type="submit"
+              id="submitButtonFormPopup"
+              class="modal__form-button registration__formRegisterButton-formPopup registration__formRegisterButton-formPopup_disabled"
+            >
+              Записаться
+            </button>
+          </form>
+          <div class="modal-close">
+            <img src="icons/close-icon.png" alt="кнопка крестик" />
+          </div>
+        </div>
+      </div>
+      <div class="overlay"></div>
     </footer>
 
     <script src="scripts/script.js"></script>
     <script src="scripts/tabs.js"></script>
     <script src="scripts/modal.js"></script>
     <script src="./scripts/telegramApiBot.js"></script>
+    <script src="./scripts/telegramApiBotPopupForm.js"></script>
     <script type="module" src="./scripts/index-contacts-form.js"></script>
+    <script type="module" src="./scripts/index-modals-form.js"></script>
     <script>
       const modal2 = createModal({
         openButtonSelector: ".intro-section__box-btn",
