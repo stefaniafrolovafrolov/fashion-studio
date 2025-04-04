@@ -150,6 +150,11 @@
   .training__descr .training__text .textTit {
     font-size: 40px;
   }
+
+  .textTit__span {
+    white-space: nowrap;
+  }
+
   /*.training__descr .training__text .textDesc {
     font-size: 33px;
   }*/
@@ -2707,7 +2712,7 @@
   }
 
   .info__column {
-min-height: 200px;
+    min-height: 200px;
   }
 
   .feed .form__input {
@@ -2958,6 +2963,14 @@ min-height: 200px;
     margin-left: 100px;
   }
 
+  .training__descr .training__text .textTit {
+    font-size: 20px;
+  }
+
+  .training__descr .training__text .textDesc {
+    font-size: 16px;
+  }
+
   .feed .form__input {
     min-width: 350px;
   }
@@ -3091,6 +3104,11 @@ min-height: 200px;
   .services-arrow {
     margin-top: 25px;
   }
+
+  .training__descr .training__text .textTit {
+    font-size: 18px;
+  }
+
 }
 
 @media (max-width: 360px) {
@@ -3496,6 +3514,12 @@ min-height: 200px;
   .why-us__item-number {
     flex: 0 0 11%;
   }
+}
+
+@media (max-width: 336px) {
+.training__descr .training__text .textTit {
+  font-size: 17px;
+}
 }
 
 @media (max-width: 330px) {

@@ -3,7 +3,7 @@ function createModal({
   closeButtonSelector,
   modalSelector,
   overlaySelector,
-  noScrollSelector
+  noScrollSelector,
 }) {
   const openModal = document.querySelector(openButtonSelector);
   const closeModal = document.querySelector(closeButtonSelector);
@@ -54,6 +54,6 @@ function createModal({
 
   return {
     open: openModalHandler,
-    close: closeModalHandler
+    close: closeModalHandler,
   };
 }
