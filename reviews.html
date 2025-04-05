@@ -109,18 +109,18 @@
       </div>
 
       <a
-      href="tel:+79261861711"
-      class="pulse-button"
-      role="button"
-      aria-label="Позвонить на номер +79261861711"
-    >
-      <span class="pulse-button__icon"></span>
-      <span class="pulse-button__text">Онлайн запись</span>
+        href="tel:+79261861711"
+        class="pulse-button"
+        role="button"
+        aria-label="Позвонить на номер +79261861711"
+      >
+        <span class="pulse-button__icon"></span>
+        <span class="pulse-button__text">Онлайн запись</span>
 
-      <span class="pulse-button__rings"></span>
-      <span class="pulse-button__rings"></span>
-      <span class="pulse-button__rings"></span>
-    </a>
+        <span class="pulse-button__rings"></span>
+        <span class="pulse-button__rings"></span>
+        <span class="pulse-button__rings"></span>
+      </a>
     </header>
 
     <div class="mobile-header">
@@ -210,7 +210,9 @@
     <section class="intro-section">
       <div class="container">
         <div class="intro-section__navigation">
-          <a class="intro-section__navigation-link" href="./index.html">Главная</a>
+          <a class="intro-section__navigation-link" href="./index.html"
+            >Главная</a
+          >
           <span class="intro-section__navigation-between">/</span>
           <p class="intro-section__navigation-link">Отзывы</p>
         </div>
@@ -227,14 +229,16 @@
             </div>
           </div>
 
-
-
-
-
           <div class="intro-section__box-btn">
             <span class="intro-section__box-btn-text">Получить</span>
-            <span class="intro-section__box-btn-text intro-section__box-btn-text_sale">скидку 10% </span>
-            <span class="intro-section__box-btn-text intro-section__box-btn-text_visit">на первый визит</span>
+            <span
+              class="intro-section__box-btn-text intro-section__box-btn-text_sale"
+              >скидку 10%
+            </span>
+            <span
+              class="intro-section__box-btn-text intro-section__box-btn-text_visit"
+              >на первый визит</span
+            >
             <img
               class="header__arrow"
               src="./icons/Arrow-1.png"
@@ -246,11 +250,6 @@
               alt="Стрелка вправо"
             />
           </div>
-
-
-
-
-
 
           <div class="intro-section__box-right">
             <img src="images/image-2.jpg" alt="фото-2" />
@@ -656,19 +655,19 @@
           <h3 class="sochSet__title">Соц.сети</h3>
           <div class="sochSet__item">
             <a
-            class="sochSet__link"
-            href="https://wa.me/+79261861711"
-            target="_blank"
-            rel="noreferrer"
-            ><img src="./icons/whatsapp_4494494.png" alt="whatsapp"
-          /></a>
-          <a
-            class="sochSet__link"
-            href="https://vk.com/lomteva.lyuda"
-            target="_blank"
-            rel="noreferrer"
-            ><img src="./icons/vkontakte_44945172.png" alt="vkontakte"
-          /></a>
+              class="sochSet__link"
+              href="https://wa.me/+79261861711"
+              target="_blank"
+              rel="noreferrer"
+              ><img src="./icons/whatsapp_4494494.png" alt="whatsapp"
+            /></a>
+            <a
+              class="sochSet__link"
+              href="https://vk.com/lomteva.lyuda"
+              target="_blank"
+              rel="noreferrer"
+              ><img src="./icons/vkontakte_44945172.png" alt="vkontakte"
+            /></a>
           </div>
         </div>
       </div>
@@ -766,23 +765,14 @@
       <div class="overlay"></div>
     </footer>
     <script src="scripts/script.js"></script>
-    <script src="scripts/modal.js"></script>
     <script src="./scripts/comments.js"></script>
+    <script type="module" src="./scripts/modal-module-page.js"></script>
     <script src="./scripts/telegramApiBot.js"></script>
     <script type="module" src="./scripts/index-reviews-form.js"></script>
     <script type="module" src="./scripts/index-contacts-form.js"></script>
     <script>
       // Инициализация элементов на странице через дополнительные запросы к API
       document.addEventListener("DOMContentLoaded", getPageData);
-    </script>
-    <script>
-      const modal2 = createModal({
-        openButtonSelector: ".intro-section__box-btn",
-        closeButtonSelector: ".modal-close",
-        modalSelector: ".modal",
-        overlaySelector: ".overlay",
-        noScrollSelector: "html",
-      });
     </script>
   </body>
 </html>
