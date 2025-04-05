@@ -32,13 +32,13 @@
 }
 @media (max-width: 700px) {
   .certificate-image-title {
-    margin-bottom: 30px;
-    font-size: 36px;
+    margin-bottom: 35px;
   }
 }
-@media (max-width: 560px) {
+
+@media (max-width: 576px) {
   .certificate-image-title {
-    font-size: 20px;
+    font-size: 35px;
   }
 }
 

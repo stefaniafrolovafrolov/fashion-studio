@@ -56,8 +56,13 @@
 @media screen and (max-width: 830px) {
   .reviews__title {
     padding-top: 10px;
-    font-size: 36px;
     margin-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .reviews__title {
+   font-size: 35px;
   }
 }
 

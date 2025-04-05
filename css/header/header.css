@@ -13,7 +13,7 @@
   display: none;
 }
 
-.header__fon-video {
+.header_fon-video {
   object-fit: cover;
   background-size: cover;
   aspect-ratio: calc(width / height);
@@ -358,7 +358,7 @@
 }
 
 @media screen and (max-width: 430px) {
-  .header__fon-video {
+  .header_fon-video {
     height: 100%;
   }
 
@@ -382,7 +382,7 @@
 }
 
 @media screen and (max-width: 400px) {
-  .header__fon-video {
+  .header_fon-video {
     height: 100%;
   }
 

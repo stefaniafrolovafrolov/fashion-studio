@@ -1,68 +1,68 @@
 .portfolio {
- width: 100%;
- background-color: #323232;
+  width: 100%;
+  background-color: #323232;
 }
 .portfolio__title {
- padding-top: 60px;
- font-family: Lora;
- font-size: 50px;
- font-weight: normal;
- line-height: normal;
- letter-spacing: normal;
- text-align: center;
- color: #cdaf62;
- margin-bottom: 100px;
+  padding-top: 60px;
+  font-family: Lora;
+  font-size: 50px;
+  font-weight: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #cdaf62;
+  margin-bottom: 100px;
 }
 .block__img {
- margin: 0 auto;
+  margin: 0 auto;
 
- display: flex;
- justify-content: space-between;
- margin-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
 }
 .management {
- margin: 0px auto;
+  margin: 0px auto;
 }
 .management__icon {
- display: flex;
- gap: 20px;
- justify-content: center;
- align-items: center;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
 }
 .iconBig {
- width: 70px;
- height: 70px;
- background-color: #cdaf62;
- border-radius: 100%;
- display: flex;
- justify-content: center;
- align-items: center;
- font-size: 40px;
+  width: 70px;
+  height: 70px;
+  background-color: #cdaf62;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
 }
 .iconSmall {
- display: flex;
- justify-content: center;
- align-items: center;
- gap: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 .iconSmall .icon {
- width: 20px;
- height: 20px;
- border-radius: 100%;
- background-color: #fff;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background-color: #fff;
 }
 .iconSmall .active {
- background-color: #cdaf62;
+  background-color: #cdaf62;
 }
 
 .navigation-container {
- position: absolute;
- bottom: 0;
- left: 50%;
- transform: translateX(-50%);
- display: flex;
- align-items: center;
- justify-content: center;
- gap: 30px;
- width: auto;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  width: auto;
 }

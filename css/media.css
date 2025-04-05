@@ -359,6 +359,14 @@
   .header__advert .one {
     padding-top: 30px;
   }
+  .training__descr .training__text .textTit {
+    font-size: 26px;
+    max-width: 650px;
+  }
+
+  .textDesc {
+    max-width: 600px;
+  }
   .header__advert .arrow {
     padding-top: 25px;
   }
@@ -467,9 +475,7 @@
     height: 24px;
     font-size: 12px;
   }
-  .training__title {
-    font-size: 40px;
-  }
+
   .training__descr {
     width: 84%;
   }
@@ -745,6 +751,12 @@
   }
 }
 
+@media (max-width: 1330px) {
+  .training__descr .training__text .textTit {
+    max-width: 620px;
+  }
+}
+
 @media (max-width: 1300px) {
   .training__descr .trainingImg {
     width: 350px;
@@ -829,9 +841,6 @@
     height: 44px;
     font-size: 18px;
   }
-  .training__title {
-    font-size: 36px;
-  }
 
   .training__descr .training__text .textTit {
     font-size: 21px;
@@ -852,7 +861,7 @@
   }
 
   .training__title {
-    padding-top: 32px;
+    padding-top: 80px;
     margin-bottom: 30px;
   }
 
@@ -1100,6 +1109,7 @@
 @media (max-width: 880px) {
   .masters__items {
     padding: 0;
+    padding-top: 60px;
   }
 }
 
@@ -1404,7 +1414,6 @@
   }
 
   .main__title {
-    font-size: 36px;
     padding-bottom: 25px;
   }
 
@@ -1580,10 +1589,6 @@
     width: 250px;
   }
 
-  body .portfolio__title {
-    font-size: 36px;
-  }
-
   .portfolio .swiper-slide img {
     width: 250px !important;
   }
@@ -1714,7 +1719,6 @@
   }
 
   .why-us__title {
-    font-size: 36px;
     margin-top: -30px;
     margin-bottom: 30px;
   }
@@ -1798,6 +1802,11 @@
     justify-content: space-between;
   }
 
+  .training__descr .training__text .textTit {
+    font-size: 18px;
+    max-width: 350px;
+  }
+
   .why-us__item-inner {
     display: flex;
 
@@ -1848,10 +1857,6 @@
   .masters__items .item.item {
     max-width: 160px;
   }
-
-  /* .feed__title {
-    font-size: 30px;
-  }*/
 }
 
 @media (max-width: 730px) {
@@ -1860,13 +1865,17 @@
   }
 
   .training__descr .trainingImg {
-    width: 200px;
+    width: 250px;
   }
 
   .training__descr .training__text .textBtn {
     width: 250px;
     height: 40px;
     font-size: 16px;
+  }
+
+  .awards-slider .swiper-pagination-bullet {
+    margin: 0 5px !important;
   }
 }
 
@@ -1878,6 +1887,10 @@
   .loyalty__proposal .proposal {
     padding: 20px 15px 20px 15px;
     margin: 0;
+  }
+
+  .training__descr .training__text .textTit {
+    font-size: 17px;
   }
 
   .proposal__btn {
@@ -2141,7 +2154,6 @@
   }
 
   .training__descr .training__text .textBtn {
-    height: 35px;
     font-size: 16px;
     margin-top: 20px;
   }
@@ -2158,6 +2170,8 @@
 
   .training__descr .trainingImg {
     margin: auto;
+    height: 400px;
+    width: 320px;
   }
 
   .footer .conteiner {
@@ -2613,7 +2627,7 @@
 
 @media (max-width: 576px) {
   .certificate .certificate__title {
-    font-size: 30px;
+    font-size: 35px;
   }
 
   .masters__items {
@@ -2621,7 +2635,8 @@
   }
 
   .training__title {
-    font-size: 35px;
+    padding-top: 60px;
+    font-size: 36px;
   }
 
   .main .loyalty__title {
@@ -2633,11 +2648,12 @@
   }
 
   body .portfolio__title {
-    font-size: 35px;
+    font-size: 36px;
+    padding-top: 60px;
   }
 
   .reviews__title {
-    font-size: 35px;
+    font-size: 36px;
     margin-bottom: 40px;
   }
 
@@ -2707,6 +2723,10 @@
     width: 240px;
     height: 240px;
     margin-left: 40px;
+  }
+
+  .why-us__title {
+    font-size: 35px;
   }
 
   .info__title {
@@ -2798,6 +2818,10 @@
 
   .footer .conteiner .contacts__descr .des {
     font-size: 12px;
+  }
+
+  .masters__items {
+    padding: 0;
   }
 
   .footer .conteiner .pages__link .pages__item {
@@ -2978,7 +3002,7 @@
   }
 
   .feed__title {
-    font-size: 26px;
+    font-size: 30px;
   }
 
   .feed__photo {
@@ -3049,10 +3073,6 @@
     max-width: 320px;
   }
 
-  .feed__title {
-    font-size: 22px;
-  }
-
   .feed__photo {
     margin-left: 100px;
   }
@@ -3102,6 +3122,14 @@
     font-size: 9px;
   }
 
+  .certificate .certificate__title {
+    font-size: 25px;
+  }
+
+  .main .loyalty__title {
+    font-size: 25px;
+  }
+
   .location__heading {
     font-size: 30px;
   }
@@ -3129,6 +3157,11 @@
 
   .training__descr .training__text .textTit {
     font-size: 18px;
+  }
+
+  .awards-slider .swiper-pagination-bullet {
+    width: 13px !important;
+    height: 13px !important;
   }
 }
 
@@ -3266,7 +3299,7 @@
   }
 
   .certificate .certificate__title {
-    font-size: 20px;
+    font-size: 25px;
   }
 
   .certificate .certificate__subtitle {
@@ -3294,9 +3327,6 @@
     font-size: 20px;
   }
 
-  .masters__title {
-    font-size: 20px;
-  }
   .masters__items {
     margin: 16px auto;
   }
@@ -3305,13 +3335,9 @@
     font-size: 20px !important;
   }
 
-  .training__title {
-    font-size: 20px;
-  }
-
   .awards-slider .swiper-pagination-bullet {
-    width: 7px !important;
-    height: 7px !important;
+    width: 10px !important;
+    height: 10px !important;
   }
 
   .awards-slider .swiper-button-prev,
@@ -3325,14 +3351,14 @@
     width: 30px;
   }*/
 
-  .awards-slider .swiper-pagination-bullet {
+  /*.awards-slider .swiper-pagination-bullet {
     width: 7px;
     height: 7px;
     background-color: #ffffff !important;
     opacity: 1 !important;
     margin: 0 20px;
     border: none !important;
-  }
+  }*/
 
   .awards-slider .swiper-pagination-bullet-active {
     background-color: #cdaf62 !important;
@@ -3454,7 +3480,6 @@
   }
 
   .form__button {
-    height: 35px;
     font-size: 13px;
     line-height: normal;
     width: 100%;
@@ -3471,7 +3496,7 @@
   }
 
   .location__heading {
-    font-size: 20px;
+    font-size: 26px;
     top: 0;
   }
 
@@ -3512,18 +3537,6 @@
     width: 100%;
   }
 
-  body .portfolio__title {
-    font-size: 20px;
-  }
-
-  .reviews__title {
-    font-size: 20px;
-  }
-
-  .why-us__title {
-    font-size: 20px;
-  }
-
   .why-us__item-text {
     font-size: 15px;
   }
@@ -3546,6 +3559,11 @@
 @media (max-width: 330px) {
   .certificate .certificate__image-card {
     max-width: 310px;
+  }
+
+  .training__descr .trainingImg {
+    height: 380px;
+    width: 310px;
   }
 }
 

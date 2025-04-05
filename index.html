@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -30,7 +30,7 @@
   </head>
   <body class="root">
     <div class="page">
-      <header class="header header__fon-video">
+      <header class="header header_fon-video">
         <!-- <video autoplay loop muted playsinline preload="auto" class="header__bgvideo">
           <source src="./video/video1920-1080@20.webm" type="video/mp4" />
         </video>-->
@@ -103,9 +103,9 @@
           </p>
 
           <button class="header__button-circle">
-            <p class="header__text">Получить</p>
-            <p class="header__sale">скидку 10%</p>
-            <p class="header__visit">на первый визит</p>
+            <span class="header__text">Получить</span>
+            <span class="header__sale">скидку 10%</span>
+            <span class="header__visit">на первый визит</span>
             <img
               class="header__arrow"
               src="./icons/Arrow-1.png"
@@ -142,9 +142,9 @@
               src="./icons/logo.png"
               alt="Логотип"
             />
-            <p class="mobile-header__brand">
+            <h2 class="mobile-header__brand">
               Fashion Studio by Lomteva Lyudmila
-            </p>
+            </h2>
           </a>
         </div>
 
@@ -224,8 +224,8 @@
       <main>
         <div class="main wh">
           <div class="container">
-            <h1 class="main__title">Наши услуги</h1>
-            <div class="services">
+            <h2 class="main__title">Наши услуги</h2>
+            <section class="services">
               <div class="services__item">
                 <img
                   class="services__img"
@@ -257,23 +257,23 @@
                   Записаться
                 </button>
               </div>
-            </div>
+            </section>
             <a class="main__link" href="./prices.html">Смотреть все</a>
             <div class="services-arrow">
               <button class="services-arrow-prev">
-                <img src="icons/Arrow-Left.png" />
+                <img src="icons/Arrow-Left.png" alt="левая стрелка" />
               </button>
               <button class="services-arrow-next">
-                <img src="icons/Arrow-Right.png" />
+                <img src="icons/Arrow-Right.png" alt="правая стрелка" />
               </button>
             </div>
 
             <section class="certificate">
               <h2 class="certificate__title">Подарочный сертификат</h2>
-              <span class="certificate__subtitle"
-                >Купи подарок себе или близким прямо сейчас! Сертификат можно
-                приобрести онлайн</span
-              >
+              <p class="certificate__subtitle">
+                Купи подарок себе или близким прямо сейчас! Сертификат можно
+                приобрести онлайн
+              </p>
 
               <div class="certificate__wrapper-block">
                 <img
@@ -299,7 +299,7 @@
               </div>
             </section>
 
-            <div class="loyalty">
+            <section class="loyalty">
               <h2 class="loyalty__title">Программа лояльности</h2>
               <div class="loyalty__proposal">
                 <div class="proposal">
@@ -316,7 +316,7 @@
                 </div>
                 <img class="proposalImg" src="./images/loial.png" alt="loyal" />
               </div>
-            </div>
+            </section>
           </div>
         </div>
         <section class="masters">
@@ -324,41 +324,41 @@
           <div class="masters__items">
             <div class="item">
               <img src="./images/image1.png" alt="Nad" class="item__img" />
-              <h4 class="item__title">Надежда</h4>
-              <span class="item__text">Косметолог</span>
+              <h3 class="item__title">Надежда</h3>
+              <p class="item__text">Косметолог</p>
               <button class="item__btn">Записаться</button>
             </div>
             <div class="item">
               <img src="./images/nad2.png" alt="Nad" class="item__img" />
-              <h4 class="item__title">Надежда</h4>
-              <span class="item__text">Косметолог</span>
+              <h3 class="item__title">Надежда</h3>
+              <p class="item__text">Косметолог</p>
               <button class="item__btn">Записаться</button>
             </div>
             <div class="item">
               <img src="./images/nad3.png" alt="Nad" class="item__img" />
-              <h4 class="item__title">Надежда</h4>
-              <span class="item__text">Косметолог</span>
+              <h3 class="item__title">Надежда</h3>
+              <p class="item__text">Косметолог</p>
               <button class="item__btn">Записаться</button>
             </div>
             <div class="item one">
               <img src="./images/lud.png" alt="Nad" class="item__img" />
-              <h4 class="item__title">Людмила</h4>
-              <span class="item__text">Косметолог</span>
+              <h3 class="item__title">Людмила</h3>
+              <p class="item__text">Косметолог</p>
               <button class="item__btn">Записаться</button>
             </div>
             <div class="item two">
               <img src="./images/evg.png" alt="Nad" class="item__img" />
-              <h4 class="item__title">Евгения</h4>
-              <span class="item__text">Косметолог</span>
+              <h3 class="item__title">Евгения</h3>
+              <p class="item__text">Косметолог</p>
               <button class="item__btn">Записаться</button>
             </div>
           </div>
           <div class="services-arrow">
             <button class="masters-arrow-prev">
-              <img src="icons/Arrow-Left.png" />
+              <img src="icons/Arrow-Left.png" alt="левая стрелка" />
             </button>
             <button class="masters-arrow-next">
-              <img src="icons/Arrow-Right.png" />
+              <img src="icons/Arrow-Right.png" alt="правая стрелка" />
             </button>
           </div>
         </section>
@@ -434,79 +434,17 @@
           </div>
         </section>
 
-        <!--   <section class="certificates">
-        <div class="container">
-          <h2 class="certificates__title">Сертификаты</h2>
-          <div class="certificates__block">
-            <div class="certificates__slider swiper">
-              <div class="certificates__wrapper swiper-wrapper">
-                <div class="certificates__slide swiper-slide">
-                  <img
-                    src="images/image.png"
-                    alt="Сертификат 1"
-                    class="certificates__image certificates__image_center"
-                  />
-                </div>-->
-        <!--  <div class="certificates__slide swiper-slide">
-                
-                <img
-
-
-
-               
-
-                  src="images/sertificat-new.jpeg"
-                  alt="Сертификат 1"
-                  class="certificates__image"
-                />
-              </div>-->
-        <!-- <div class="certificates__slide swiper-slide">
-                  <img
-                    src="images/image_4.png"
-                    alt="Сертификат 1"
-                    class="certificates__image certificates__image_right"
-                  />
-                </div>
-                <div class="certificates__slide swiper-slide">
-                  <img
-                    src="images/image_5.png"
-                    alt="Сертификат 1"
-                    class="certificates__image"
-                  />
-                </div>
-                <div class="certificates__slide swiper-slide">
-                  <img
-                    src="images/image_5.png"
-                    alt="Сертификат 1"
-                    class="certificates__image certificates__image_left"
-                  />
-                </div>
-              </div>-->
-        <!-- Стрелки -->
-        <!-- <div class="sert-arrow">
-                <div class="certificates__button certificates__button--prev">
-                  <img src="icons/Arrow-Left.png" />
-                </div>
-                <div class="certificates__button certificates__button--next">
-                  <img src="icons/Arrow-Right.png" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>-->
-
         <section class="training">
           <div class="container">
             <h2 class="training__title">Обучение</h2>
             <div class="training__descr">
               <div class="training__text">
-                <span class="textTit"
-                  ><span class="textTit__span"
+                <p class="textTit">
+                  <span class="textTit__span"
                     >Провожу обучение по перманентному</span
                   >
                   макияжу с выдачей гос дипломов.
-                </span>
+                </p>
                 <p class="textDesc">
                   Являюсь тренером академии Ирины Волковой и своего авторского
                   курса. Провожу мастер классы бровист, ламинирование, стретчинг
@@ -521,7 +459,7 @@
             </div>
           </div>
         </section>
-        <div class="portfolio">
+        <section class="portfolio">
           <div class="container">
             <h2 class="portfolio__title">Портфолио</h2>
             <div class="block">
@@ -625,10 +563,12 @@
                     <img
                       class="button-desktop"
                       src="./images/buttons-new/arow-left.svg"
+                      alt="левая стрелка"
                     />
                     <img
                       class="button-mobile"
                       src="./images/buttons-new/arow-left-mobile.svg"
+                      alt="правая стрелка"
                     />
                   </div>
                   <div class="swiper-pagination"></div>
@@ -636,17 +576,19 @@
                     <img
                       class="button-desktop"
                       src="./images/buttons-new/arow-right.svg"
+                      alt="правая стрелка"
                     />
                     <img
                       class="button-mobile"
                       src="./images/buttons-new/arow-rigth-mobile.svg"
+                      alt="правая стрелка"
                     />
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
+        </section>
         <section class="reviews">
           <div class="container">
             <h2 class="reviews__title">Отзывы</h2>
@@ -664,23 +606,27 @@
             </div>
 
             <div class="reviews__container">
-              <a href="#" class="reviews__link"
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://2gis.ru/moscow/search/79261861711/firm/70000001087308830/37.313161%2C55.625132/tab/reviews"
+                class="reviews__link"
                 >читать больше отзывов на яндекс картах</a
               >
             </div>
           </div>
         </section>
 
-        <div class="communication">
+        <section class="communication">
           <div class="container">
             <div class="communication__inner">
               <div class="communication__descr">
-                <span class="commTitle">
+                <h3 class="commTitle">
                   <span class="communication__text-nowrap"
                     >Понравилось обслуживание?</span
                   ><br />
                   Оставьте отзыв!
-                </span>
+                </h3>
                 <br />
                 <p class="commText">Ваш номер телефона не будет опубликован</p>
                 <form
@@ -728,7 +674,6 @@
                       id="textInput"
                       name="text"
                       minlength="2"
-                      type="text"
                       required
                       placeholder="Оставьте отзыв не более 1000 символов"
                     ></textarea>
@@ -742,7 +687,6 @@
                     type="submit"
                     class="reviews__formButtonRew reviews__formButtonRew_disabled"
                     onclick="submitComment()"
-                    type="button"
                     value="Оставить отзыв"
                   />
 
@@ -764,53 +708,53 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="why-us">
-          <h2 class="why-us__title">Почему мы</h2>
+        </section>
+
+        <section class="why-us">
+          <h3 class="why-us__title">Почему мы</h3>
           <div class="why-us__wrapper">
             <div class="container">
               <div class="why-us__item">
                 <div class="why-us__item-inner">
-                  <div class="why-us__item-number">01</div>
-                  <div class="why-us__item-text">
+                  <h4 class="why-us__item-number">01</h4>
+                  <p class="why-us__item-text">
                     Работаем до последнего клиента
-                  </div>
+                  </p>
                 </div>
                 <div class="why-us__item-inner">
-                  <div class="why-us__item-number">02</div>
-                  <div class="why-us__item-text">Комфортная обстановка</div>
-                </div>
-              </div>
-              <div class="why-us__item">
-                <div class="why-us__item-inner">
-                  <div class="why-us__item-number">03</div>
-                  <div class="why-us__item-text">Только хорошие отзывы</div>
-                </div>
-                <div class="why-us__item-inner">
-                  <div class="why-us__item-number">04</div>
-                  <div class="why-us__item-text">Медицинская лицензия</div>
+                  <h4 class="why-us__item-number">02</h4>
+                  <p class="why-us__item-text">Комфортная обстановка</p>
                 </div>
               </div>
               <div class="why-us__item">
                 <div class="why-us__item-inner">
-                  <div class="why-us__item-number">05</div>
-                  <div class="why-us__item-text">
-                    Сертифицированные аппараты
-                  </div>
+                  <h4 class="why-us__item-number">03</h4>
+                  <p class="why-us__item-text">Только хорошие отзывы</p>
                 </div>
                 <div class="why-us__item-inner">
-                  <div class="why-us__item-number">06</div>
-                  <div class="why-us__item-text">Профессиональные мастера</div>
+                  <h4 class="why-us__item-number">04</h4>
+                  <p class="why-us__item-text">Медицинская лицензия</p>
+                </div>
+              </div>
+              <div class="why-us__item">
+                <div class="why-us__item-inner">
+                  <h4 class="why-us__item-number">05</h4>
+                  <p class="why-us__item-text">Сертифицированные аппараты</p>
+                </div>
+                <div class="why-us__item-inner">
+                  <h4 class="why-us__item-number">06</h4>
+                  <p class="why-us__item-text">Профессиональные мастера</p>
                 </div>
               </div>
             </div>
           </div>
-        </div>
+        </section>
+
         <section class="feed">
           <div class="container feeds">
             <div class="feed__wrapper">
               <div class="feed__content">
-                <h2 class="feed__title">Остались вопросы?</h2>
+                <h3 class="feed__title">Остались вопросы?</h3>
                 <p class="feed__subtitle">
                   Оставьте заявку и наш менеджер свяжется с вами в ближайшее
                   время
@@ -884,15 +828,16 @@
             </div>
           </div>
         </section>
+
         <section class="location">
           <div class="location__wrapper">
             <div class="location__address">
               <div class="location__title">
                 <div class="container">
-                  <h2 class="location__heading">Адреса наших салонов :</h2>
-                  <h3 class="location__subheading">
+                  <h3 class="location__heading">Адреса наших салонов :</h3>
+                  <p class="location__subheading">
                     Озеры: пл. Коммунистическая 46 , 3 этаж
-                  </h3>
+                  </p>
                 </div>
               </div>
               <div class="location__map">
@@ -913,9 +858,9 @@
             <div class="location__address">
               <div class="location__title location__title--height">
                 <div class="container">
-                  <h3 class="location__subheading">
+                  <p class="location__subheading">
                     Москва : Летчика Грицевца 14 а
-                  </h3>
+                  </p>
                 </div>
               </div>
               <div class="location__map">
@@ -945,7 +890,7 @@
             <img src="./images/karta2.png" width="314px" alt="karta" />
           </div>
           <div class="pages">
-            <h3 class="pages__title">Страницы</h3>
+            <h4 class="pages__title">Страницы</h4>
             <div class="pages__link">
               <ul>
                 <li class="pages__item"><a href="./index.html">Главная</a></li>
@@ -962,11 +907,11 @@
             </div>
           </div>
           <div class="contacts">
-            <h3 class="studia__title mob">
+            <h4 class="studia__title mob">
               Fashion Studio by <br />
               Lomteva Lyudmila
-            </h3>
-            <h3 class="contacts__title">Контакты</h3>
+            </h4>
+            <h4 class="contacts__title">Контакты</h4>
             <div class="contacts__descr">
               <p class="des">Озеры: пл. Коммунистическая 4б . 3 этаж</p>
               <p class="des">Москва : Летчика Грицевца 14 а</p>
@@ -975,7 +920,7 @@
             </div>
           </div>
           <div class="sochSet">
-            <h3 class="sochSet__title">Соц.сети</h3>
+            <h6 class="sochSet__title">Соц.сети</h6>
             <div class="sochSet__item">
               <a
                 class="sochSet__link"
@@ -994,99 +939,99 @@
             </div>
           </div>
         </div>
-        <div class="modal">
-          <div class="modal__inner">
-            <div class="modal__header">
-              <div class="modal__header-logo">
-                <img
-                  class="modal__header-logo-img"
-                  src="images/logo.png"
-                  alt=""
-                />
-              </div>
-              <div class="modal__header-text">
-                <p>Fashion Studio by <br />Lomteva Lyudmila</p>
-              </div>
+      </footer>
+      <div class="modal">
+        <div class="modal__inner">
+          <div class="modal__header">
+            <div class="modal__header-logo">
+              <img
+                class="modal__header-logo-img"
+                src="images/logo.png"
+                alt=""
+              />
             </div>
-            <div class="modal__description">
-              <p class="modal__description-title">
-                Хотите скидку 10% <br />
-                на первый визит?
-              </p>
-              <p class="modal__description-subtitle">
-                Оставьте ваши данные и наш менеджер<br />
-                свяжеться с вами
-              </p>
-            </div>
-            <form
-              class="modal__form"
-              id="contactFormPopup"
-              name="contactFormPopup"
-            >
-              <div class="modal__form-item">
-                <span class="modal__form-item-text">Ваше имя</span>
-                <input
-                  class="modal__form-item-input"
-                  id="nameInput"
-                  name="name"
-                  minlength="2"
-                  type="text"
-                  pattern="^[A-Za-zА-Яа-яЁё]{2,}$"
-                  placeholder="Введите минимум 2 символа"
-                  required
-                />
-                <span class="nameInput-errors errors"></span>
-              </div>
-              <div class="modal__form-item">
-                <span class="modal__form-item-text">Номер телефона</span>
-                <input
-                  id="phoneInput"
-                  name="phone"
-                  class="modal__form-item-input"
-                  type="tel"
-                  minlength="11"
-                  maxlength="30"
-                  pattern="^(\+7\d{10}|8\d{10})$"
-                  placeholder="+7XXXXXXXXXX или 8XXXXXXXXXX"
-                  required
-                />
-                <span class="phoneInput-errors errors"></span>
-              </div>
-
-              <span
-                class="procedures__message-error-formPopup"
-                id="server-error-message-formPopup"
-              ></span>
-
-              <div class="success-message-formPopup">
-                Сообщение успешно отправлено! Мастер свяжется с вами в
-                близжайшее время!
-              </div>
-
-              <div
-                class="timer-message-formPopup"
-                id="timerMessage-formPopup"
-                style="display: none"
-              >
-                Пожалуйста, подождите
-                <span id="countdown-formPopup">60</span> секунд перед повторной
-                отправкой.
-              </div>
-              <button
-                type="submit"
-                id="submitButtonFormPopup"
-                class="modal__form-button registration__formRegisterButton-formPopup registration__formRegisterButton-formPopup_disabled"
-              >
-                Записаться
-              </button>
-            </form>
-            <div class="modal-close">
-              <img src="icons/close-icon.png" alt="кнопка крестик" />
+            <div class="modal__header-text">
+              <p>Fashion Studio by <br />Lomteva Lyudmila</p>
             </div>
           </div>
+          <div class="modal__description">
+            <p class="modal__description-title">
+              Хотите скидку 10% <br />
+              на первый визит?
+            </p>
+            <p class="modal__description-subtitle">
+              Оставьте ваши данные и наш менеджер<br />
+              свяжеться с вами
+            </p>
+          </div>
+          <form
+            class="modal__form"
+            id="contactFormPopup"
+            name="contactFormPopup"
+          >
+            <div class="modal__form-item">
+              <span class="modal__form-item-text">Ваше имя</span>
+              <input
+                class="modal__form-item-input"
+                id="nameInput"
+                name="name"
+                minlength="2"
+                type="text"
+                pattern="^[A-Za-zА-Яа-яЁё]{2,}$"
+                placeholder="Введите минимум 2 символа"
+                required
+              />
+              <span class="nameInput-errors errors"></span>
+            </div>
+            <div class="modal__form-item">
+              <span class="modal__form-item-text">Номер телефона</span>
+              <input
+                id="phoneInput"
+                name="phone"
+                class="modal__form-item-input"
+                type="tel"
+                minlength="11"
+                maxlength="30"
+                pattern="^(\+7\d{10}|8\d{10})$"
+                placeholder="+7XXXXXXXXXX или 8XXXXXXXXXX"
+                required
+              />
+              <span class="phoneInput-errors errors"></span>
+            </div>
+
+            <span
+              class="procedures__message-error-formPopup"
+              id="server-error-message-formPopup"
+            ></span>
+
+            <div class="success-message-formPopup">
+              Сообщение успешно отправлено! Мастер свяжется с вами в близжайшее
+              время!
+            </div>
+
+            <div
+              class="timer-message-formPopup"
+              id="timerMessage-formPopup"
+              style="display: none"
+            >
+              Пожалуйста, подождите
+              <span id="countdown-formPopup">60</span> секунд перед повторной
+              отправкой.
+            </div>
+            <button
+              type="submit"
+              id="submitButtonFormPopup"
+              class="modal__form-button registration__formRegisterButton-formPopup registration__formRegisterButton-formPopup_disabled"
+            >
+              Записаться
+            </button>
+          </form>
+          <div class="modal-close">
+            <img src="icons/close-icon.png" alt="кнопка крестик" />
+          </div>
         </div>
-        <div class="overlay"></div>
-      </footer>
+      </div>
+      <div class="overlay"></div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./scripts/script.js"></script>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -21,7 +21,7 @@
     <title>LomtevaL</title>
   </head>
   <body class="root">
-    <header class="header header__fon-video">
+    <header class="header header_fon-video">
       <!-- <video autoplay loop muted playsinline preload="auto" class="header__bgvideo">
               <source src="./video/video1920-1080@20.webm" type="video/mp4" />
             </video>-->
@@ -129,7 +129,9 @@
             src="./icons/logo.png"
             alt="Логотип"
           />
-          <p class="mobile-header__brand">Fashion Studio by Lomteva Lyudmila</p>
+          <h2 class="mobile-header__brand">
+            Fashion Studio by Lomteva Lyudmila
+          </h2>
         </a>
       </div>
 
@@ -257,6 +259,7 @@
           </div>
         </div>
       </section>
+
       <section class="info">
         <div class="container">
           <div class="info__grid">
@@ -507,99 +510,91 @@
           </div>
         </div>
       </div>
-      <div class="modal">
-        <div class="modal__inner">
-          <div class="modal__header">
-            <div class="modal__header-logo">
-              <img
-                class="modal__header-logo-img"
-                src="images/logo.png"
-                alt=""
-              />
-            </div>
-            <div class="modal__header-text">
-              <p>Fashion Studio by <br />Lomteva Lyudmila</p>
-            </div>
+    </footer>
+    <div class="modal">
+      <div class="modal__inner">
+        <div class="modal__header">
+          <div class="modal__header-logo">
+            <img class="modal__header-logo-img" src="images/logo.png" alt="" />
           </div>
-          <div class="modal__description">
-            <p class="modal__description-title">
-              Хотите скидку 10% <br />
-              на первый визит?
-            </p>
-            <p class="modal__description-subtitle">
-              Оставьте ваши данные и наш менеджер<br />
-              свяжеться с вами
-            </p>
-          </div>
-          <form
-            class="modal__form"
-            id="contactFormPopup"
-            name="contactFormPopup"
-          >
-            <div class="modal__form-item">
-              <span class="modal__form-item-text">Ваше имя</span>
-              <input
-                class="modal__form-item-input"
-                id="nameInput"
-                name="name"
-                minlength="2"
-                type="text"
-                pattern="^[A-Za-zА-Яа-яЁё]{2,}$"
-                placeholder="Введите минимум 2 символа"
-                required
-              />
-              <span class="nameInput-errors errors"></span>
-            </div>
-            <div class="modal__form-item">
-              <span class="modal__form-item-text">Номер телефона</span>
-              <input
-                id="phoneInput"
-                name="phone"
-                class="modal__form-item-input"
-                type="tel"
-                minlength="11"
-                maxlength="30"
-                pattern="^(\+7\d{10}|8\d{10})$"
-                placeholder="+7XXXXXXXXXX или 8XXXXXXXXXX"
-                required
-              />
-              <span class="phoneInput-errors errors"></span>
-            </div>
-
-            <span
-              class="procedures__message-error-formPopup"
-              id="server-error-message-formPopup"
-            ></span>
-
-            <div class="success-message-formPopup">
-              Сообщение успешно отправлено! Мастер свяжется с вами в близжайшее
-              время!
-            </div>
-
-            <div
-              class="timer-message-formPopup"
-              id="timerMessage-formPopup"
-              style="display: none"
-            >
-              Пожалуйста, подождите
-              <span id="countdown-formPopup">60</span> секунд перед повторной
-              отправкой.
-            </div>
-            <button
-              type="submit"
-              id="submitButtonFormPopup"
-              class="modal__form-button registration__formRegisterButton-formPopup registration__formRegisterButton-formPopup_disabled"
-            >
-              Записаться
-            </button>
-          </form>
-          <div class="modal-close">
-            <img src="icons/close-icon.png" alt="кнопка крестик" />
+          <div class="modal__header-text">
+            <p>Fashion Studio by <br />Lomteva Lyudmila</p>
           </div>
         </div>
+        <div class="modal__description">
+          <p class="modal__description-title">
+            Хотите скидку 10% <br />
+            на первый визит?
+          </p>
+          <p class="modal__description-subtitle">
+            Оставьте ваши данные и наш менеджер<br />
+            свяжеться с вами
+          </p>
+        </div>
+        <form class="modal__form" id="contactFormPopup" name="contactFormPopup">
+          <div class="modal__form-item">
+            <span class="modal__form-item-text">Ваше имя</span>
+            <input
+              class="modal__form-item-input"
+              id="nameInput"
+              name="name"
+              minlength="2"
+              type="text"
+              pattern="^[A-Za-zА-Яа-яЁё]{2,}$"
+              placeholder="Введите минимум 2 символа"
+              required
+            />
+            <span class="nameInput-errors errors"></span>
+          </div>
+          <div class="modal__form-item">
+            <span class="modal__form-item-text">Номер телефона</span>
+            <input
+              id="phoneInput"
+              name="phone"
+              class="modal__form-item-input"
+              type="tel"
+              minlength="11"
+              maxlength="30"
+              pattern="^(\+7\d{10}|8\d{10})$"
+              placeholder="+7XXXXXXXXXX или 8XXXXXXXXXX"
+              required
+            />
+            <span class="phoneInput-errors errors"></span>
+          </div>
+
+          <span
+            class="procedures__message-error-formPopup"
+            id="server-error-message-formPopup"
+          ></span>
+
+          <div class="success-message-formPopup">
+            Сообщение успешно отправлено! Мастер свяжется с вами в близжайшее
+            время!
+          </div>
+
+          <div
+            class="timer-message-formPopup"
+            id="timerMessage-formPopup"
+            style="display: none"
+          >
+            Пожалуйста, подождите
+            <span id="countdown-formPopup">60</span> секунд перед повторной
+            отправкой.
+          </div>
+          <button
+            type="submit"
+            id="submitButtonFormPopup"
+            class="modal__form-button registration__formRegisterButton-formPopup registration__formRegisterButton-formPopup_disabled"
+          >
+            Записаться
+          </button>
+        </form>
+        <div class="modal-close">
+          <img src="icons/close-icon.png" alt="кнопка крестик" />
+        </div>
       </div>
-      <div class="overlay"></div>
-    </footer>
+    </div>
+    <div class="overlay"></div>
     <script src="./scripts/script.js"></script>
     <script src="./scripts/tabs.js"></script>
     <script type="module" src="./scripts/modal-module-page.js"></script>
