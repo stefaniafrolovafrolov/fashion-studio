@@ -1,59 +1,50 @@
-function createModal({
-  openButtonSelector,
-  closeButtonSelector,
-  modalSelector,
-  overlaySelector,
-  noScrollSelector,
-}) {
-  const openModal = document.querySelector(openButtonSelector);
-  const closeModal = document.querySelector(closeButtonSelector);
-  const modal = document.querySelector(modalSelector);
-  const overlay = document.querySelector(overlaySelector);
-  const noScroll = document.querySelector(noScrollSelector);
+const buttonCircle = document.querySelector(".header__button-circle");
+const buttonClose = document.querySelector(".modal-close");
+const modal = document.querySelector(".modal");
+const overlay = document.querySelector(".overlay");
+const buttonsServices = document.querySelectorAll(".services__btn");
+const buttonCard = document.querySelector(".proposal__btn");
+const buttonCardMaster = document.querySelectorAll(".item__btn");
 
-  if (!openModal || !closeModal || !modal || !overlay || !noScroll) {
-    console.error("Не все элементы найдены для модального окна");
-    return;
-  }
+const noScroll = document.querySelector("html");
 
-  // Открытие модального окна
-  const openModalHandler = (e) => {
-    e.preventDefault();
-    modal.classList.add("active");
-    overlay.classList.add("active");
-    noScroll.classList.add("body-no-scroll");
-  };
+function openModalHandler(e) {
+  e.preventDefault();
+  modal.classList.add("active");
+  overlay.classList.add("active");
 
-  // Закрытие модального окна
-  const closeModalHandler = () => {
-    modal.classList.remove("active");
-    overlay.classList.remove("active");
-    noScroll.classList.remove("body-no-scroll");
-  };
-
-  // Закрытие при клике вне окна
-  const overlayCloseHandler = (event) => {
-    if (event.target === modal) {
-      closeModalHandler();
-    }
-  };
-
-  // Закрытие при нажатии на Escape
-  const escapeCloseHandler = (e) => {
-    if (e.key === "Escape") {
-      closeModalHandler();
-    }
-  };
-
-  // Добавляем обработчики событий
-  openModal.addEventListener("click", openModalHandler);
-  closeModal.addEventListener("click", closeModalHandler);
-  overlay.addEventListener("click", closeModalHandler);
-  modal.addEventListener("click", overlayCloseHandler);
-  document.addEventListener("keydown", escapeCloseHandler);
-
-  return {
-    open: openModalHandler,
-    close: closeModalHandler,
-  };
+  noScroll.classList.add("body-no-scroll");
 }
+
+function closeModalHandler() {
+  modal.classList.remove("active");
+  overlay.classList.remove("active");
+  noScroll.classList.remove("body-no-scroll");
+}
+
+function overlayCloseHandler(e) {
+  if (e.target === modal) {
+    closeModalHandler();
+  }
+}
+
+function escapeCloseHandler(e) {
+  if (e.key === "Escape") {
+    closeModalHandler();
+  }
+}
+
+buttonCircle.addEventListener("click", openModalHandler);
+buttonCard.addEventListener("click", openModalHandler);
+buttonClose.addEventListener("click", closeModalHandler);
+overlay.addEventListener("click", closeModalHandler);
+modal.addEventListener("click", overlayCloseHandler);
+document.addEventListener("keydown", escapeCloseHandler);
+
+buttonsServices.forEach((button) => {
+  button.addEventListener("click", openModalHandler);
+});
+
+buttonCardMaster.forEach((button) => {
+  button.addEventListener("click", openModalHandler);
+});
