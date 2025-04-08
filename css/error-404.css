@@ -1,96 +1,94 @@
-
-
 .error-page {
-    min-height: 100vh;
-    background-color: #323232;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: -60px; 
+  min-height: 100vh;
+  background-color: #323232;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -60px;
 }
 
 .error-page__content {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    gap: 23px;
-
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 23px;
 }
 
 .error-page__title {
-    color: #CDAF62;
-    font-family: 'Lora';
-    font-size: 124px;
-    
-    font-weight: 400;
-    margin: 0 0 40px;
-    position: relative;
-    top: 30px;
+  color: #cdaf62;
+  font-family: "Lora";
+  font-size: 74px;
+  font-weight: 400;
+  margin: 0 0 40px;
+  position: relative;
+  top: 30px;
 }
 
 .error-page__text {
-    color: #CDAF62;
-    font-family: 'Lora';
-    font-size: 48px;
-    
-    margin: 0 0 40px;
+  color: #cdaf62;
+  font-family: "Lora";
+  font-size: 38px;
+  margin: 0 0 40px;
 }
 
 .error-page__button {
-    width:820px;
-    display: inline-block;
-    padding: 20px 40px;
-    background-color: #CDAF62;
-    color: #000000;
-    font-family: 'Lora';
-    font-size: 32px;
-    
-    text-decoration: none;
-    transition: background-color 0.3s ease;
+  width: 420px;
+  height: 50px;
+  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #cdaf62;
+  color: #fff;
+  font-family: "Lora";
+  font-size: 18px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
 }
 
 .error-page__button:hover {
-    background-color: #b69459;
+  background-color: #b69459;
 }
 
 @media (max-width: 834px) {
-  .error-page__title
-  {
-	  font-size:96px;
+  .error-page__title {
+    font-size: 54px;
   }
-  
-  .error-page__text
-  {
-	  font-size:36px;
+
+  .error-page__text {
+    font-size: 26px;
   }
-  .error-page__button{
-	  font-size:30px;
-	  width:100%;
-	  height:38px;
-	  display:flex;
-	  align-items:center;
-	  justify-content:center;
-	  
-	 
+  .error-page__button {
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
-  
-  
+}
+
+@media (max-width: 450px) {
+  .error-page__text {
+    font-size: 22px;
+  }
+
+  .error-page__button {
+    width: 310px;
+    height: 35px;
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 360px) {
- 
- .error-page__title
-  {
-	  font-size:64px;
+  .error-page__title {
+    font-size: 34px;
   }
-  
-  .error-page__text
-  {
-	  font-size:18px;
+
+  .error-page__text {
+    font-size: 18px;
   }
-  .error-page__button{
-	  font-size:15px;
+  .error-page__button {
+    font-size: 15px;
   }
 }
