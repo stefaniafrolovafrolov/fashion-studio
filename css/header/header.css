@@ -291,7 +291,12 @@
     height: 60px;
     z-index: 99999;
     background: #323232;
-    /*border: solid 3px red;*/
+  }
+
+  @media screen and (max-width: 332px) {
+    .mobile-header {
+      width: 100%;
+    }
   }
 
   .mobile-header__wrapper {

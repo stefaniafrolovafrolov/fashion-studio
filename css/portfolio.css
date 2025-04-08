@@ -66,3 +66,26 @@
   gap: 30px;
   width: auto;
 }
+
+.button-desktop_left {
+  position: absolute;
+  left: 15px;
+}
+
+@media screen and (max-width: 576px) {
+  .button-desktop_left {
+    left: 5px;
+  }
+}
+
+.button-mobile_left {
+  position: absolute;
+  left: 16px;
+}
+
+@media screen and (max-width: 360px) {
+  .button-mobile_right {
+    position: absolute;
+    right: 15px;
+  }
+}

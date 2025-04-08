@@ -461,11 +461,34 @@
             Fashion Studio by <br />
             Lomteva Lyudmila
           </h3>
-          <img src="./images/karta1.png" width="314px" alt="karta" />
-          <img src="./images/karta2.png" width="314px" alt="karta" />
+          <div class="studia__maps-card">
+            <iframe
+              class="location__frame"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2262.5793900545584!2d38.55007797677045!3d54.85736697339654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4149b4367d4a9f3d%3A0x657f2a4137967f89!2z0J_Quy4g0JrQvtC80LzRg9C90LjRgdGC0LjRh9C10YHQutCw0Y8sIDQ2LCDQntC30ZHRgNGLLCDQnNC-0YHQutC-0LLRgdC60LDRjyDQvtCx0LsuLCAxNDA1NjA!5e0!3m2!1sru!2sru!4v1710344612488!5m2!1sru!2sru"
+              width="100%"
+              height="200"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+
+          <div class="studia__maps-card">
+            <iframe
+              class="location__frame"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2252.1331791290685!2d37.65494807677826!3d55.65170397297761!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414ab30d272d8c2d%3A0x6b5a9b4c1e8d4b4f!2z0YPQuy4g0JvRkdGC0YfQuNC60LAg0JPRgNC40YbQtdCy0YbQsCwgMTTQkCwg0JzQvtGB0LrQstCwLCAxMTU1NzE!5e0!3m2!1sru!2sru!4v1710344686630!5m2!1sru!2sru"
+              width="100%"
+              height="200"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
         </div>
         <div class="pages">
-          <h3 class="pages__title">Страницы</h3>
+          <h4 class="pages__title">Страницы</h4>
           <div class="pages__link">
             <ul>
               <li class="pages__item"><a href="./index.html">Главная</a></li>
@@ -482,11 +505,11 @@
           </div>
         </div>
         <div class="contacts">
-          <h3 class="studia__title mob">
+          <h4 class="studia__title mob">
             Fashion Studio by <br />
             Lomteva Lyudmila
-          </h3>
-          <h3 class="contacts__title">Контакты</h3>
+          </h4>
+          <h4 class="contacts__title">Контакты</h4>
           <div class="contacts__descr">
             <p class="des">Озеры: пл. Коммунистическая 4б . 3 этаж</p>
             <p class="des">Москва : Летчика Грицевца 14 а</p>
@@ -495,118 +518,124 @@
           </div>
         </div>
         <div class="sochSet">
-          <h3 class="sochSet__title">Соц.сети</h3>
+          <h6 class="sochSet__title">Соц.сети</h6>
           <div class="sochSet__item">
             <a
               class="sochSet__link"
               href="https://wa.me/+79261861711"
               target="_blank"
               rel="noreferrer"
-              ><img src="./icons/whatsapp_4494494.png" alt="whatsapp"
+              ><img
+                class="sochSet__link-image"
+                src="./icons/whatsapp_4494494.png"
+                alt="whatsapp"
             /></a>
             <a
               class="sochSet__link"
               href="https://vk.com/lomteva.lyuda"
               target="_blank"
               rel="noreferrer"
-              ><img src="./icons/vkontakte_44945172.png" alt="vkontakte"
+              ><img
+                class="sochSet__link-image"
+                src="./icons/vkontakte_44945172.png"
+                alt="vkontakte"
             /></a>
           </div>
         </div>
       </div>
-      <div class="modal">
-        <div class="modal__inner">
-          <div class="modal__header">
-            <div class="modal__header-logo">
-              <img
-                class="modal__header-logo-img"
-                src="images/logo.png"
-                alt=""
-              />
-            </div>
-            <div class="modal__header-text">
-              <p>Fashion Studio by <br />Lomteva Lyudmila</p>
-            </div>
+    </footer>
+    <div class="modal">
+      <div class="modal__inner">
+        <div class="modal__header">
+          <div class="modal__header-logo">
+            <img
+              class="modal__header-logo-img"
+              src="images/logo.png"
+              alt=""
+            />
           </div>
-          <div class="modal__description">
-            <p class="modal__description-title">
-              Хотите скидку 10% <br />
-              на первый визит?
-            </p>
-            <p class="modal__description-subtitle">
-              Оставьте ваши данные и наш менеджер<br />
-              свяжеться с вами
-            </p>
-          </div>
-          <form
-            class="modal__form"
-            id="contactFormPopup"
-            name="contactFormPopup"
-          >
-            <div class="modal__form-item">
-              <span class="modal__form-item-text">Ваше имя</span>
-              <input
-                class="modal__form-item-input"
-                id="nameInput"
-                name="name"
-                minlength="2"
-                type="text"
-                pattern="^[A-Za-zА-Яа-яЁё]{2,}$"
-                placeholder="Введите минимум 2 символа"
-                required
-              />
-              <span class="nameInput-errors errors"></span>
-            </div>
-            <div class="modal__form-item">
-              <span class="modal__form-item-text">Номер телефона</span>
-              <input
-                id="phoneInput"
-                name="phone"
-                class="modal__form-item-input"
-                type="tel"
-                minlength="11"
-                maxlength="30"
-                pattern="^(\+7\d{10}|8\d{10})$"
-                placeholder="+7XXXXXXXXXX или 8XXXXXXXXXX"
-                required
-              />
-              <span class="phoneInput-errors errors"></span>
-            </div>
-
-            <span
-              class="procedures__message-error-formPopup"
-              id="server-error-message-formPopup"
-            ></span>
-
-            <div class="success-message-formPopup">
-              Сообщение успешно отправлено! Мастер свяжется с вами в близжайшее
-              время!
-            </div>
-
-            <div
-              class="timer-message-formPopup"
-              id="timerMessage-formPopup"
-              style="display: none"
-            >
-              Пожалуйста, подождите
-              <span id="countdown-formPopup">60</span> секунд перед повторной
-              отправкой.
-            </div>
-            <button
-              type="submit"
-              id="submitButtonFormPopup"
-              class="modal__form-button registration__formRegisterButton-formPopup registration__formRegisterButton-formPopup_disabled"
-            >
-              Записаться
-            </button>
-          </form>
-          <div class="modal-close">
-            <img src="icons/close-icon.png" alt="кнопка крестик" />
+          <div class="modal__header-text">
+            <p>Fashion Studio by <br />Lomteva Lyudmila</p>
           </div>
         </div>
+        <div class="modal__description">
+          <p class="modal__description-title">
+            Хотите скидку 10% <br />
+            на первый визит?
+          </p>
+          <p class="modal__description-subtitle">
+            Оставьте ваши данные и наш менеджер<br />
+            свяжеться с вами
+          </p>
+        </div>
+        <form
+          class="modal__form"
+          id="contactFormPopup"
+          name="contactFormPopup"
+        >
+          <div class="modal__form-item">
+            <span class="modal__form-item-text">Ваше имя</span>
+            <input
+              class="modal__form-item-input"
+              id="nameInput"
+              name="name"
+              minlength="2"
+              type="text"
+              pattern="^[A-Za-zА-Яа-яЁё]{2,}$"
+              placeholder="Введите минимум 2 символа"
+              required
+            />
+            <span class="nameInput-errors errors"></span>
+          </div>
+          <div class="modal__form-item">
+            <span class="modal__form-item-text">Номер телефона</span>
+            <input
+              id="phoneInput"
+              name="phone"
+              class="modal__form-item-input"
+              type="tel"
+              minlength="11"
+              maxlength="30"
+              pattern="^(\+7\d{10}|8\d{10})$"
+              placeholder="+7XXXXXXXXXX или 8XXXXXXXXXX"
+              required
+            />
+            <span class="phoneInput-errors errors"></span>
+          </div>
+
+          <span
+            class="procedures__message-error-formPopup"
+            id="server-error-message-formPopup"
+          ></span>
+
+          <div class="success-message-formPopup">
+            Сообщение успешно отправлено! Мастер свяжется с вами в близжайшее
+            время!
+          </div>
+
+          <div
+            class="timer-message-formPopup"
+            id="timerMessage-formPopup"
+            style="display: none"
+          >
+            Пожалуйста, подождите
+            <span id="countdown-formPopup">60</span> секунд перед повторной
+            отправкой.
+          </div>
+          <button
+            type="submit"
+            id="submitButtonFormPopup"
+            class="modal__form-button registration__formRegisterButton-formPopup registration__formRegisterButton-formPopup_disabled"
+          >
+            Записаться
+          </button>
+        </form>
+        <div class="modal-close">
+          <img src="icons/close-icon.png" alt="кнопка крестик" />
+        </div>
       </div>
-      <div class="overlay"></div>
-    </footer>
+    </div>
+    <div class="overlay"></div>
     <script src="./scripts/script.js"></script>
     <script src="./scripts/comments.js"></script>
     <script type="module" src="./scripts/modal-module-page.js"></script>

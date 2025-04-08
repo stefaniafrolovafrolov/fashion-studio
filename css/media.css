@@ -1074,6 +1074,10 @@
     font-size: 20px;
   }
 
+  .footer .conteiner .contacts {
+    width: 180px;
+  }
+
   .studia__maps-card {
     width: 200px;
     height: 180px;
@@ -1925,6 +1929,18 @@
 @media (max-width: 730px) {
   .training__text .textTit {
     font-size: 20px;
+  }
+
+  .sochSet__link {
+    display: block;
+    width: 35px;
+    height: 35px;
+  }
+
+  .sochSet__link-image {
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
   }
 
   .training__descr .trainingImg {
@@ -3223,6 +3239,10 @@
   .footer .conteiner .studia__title {
     font-size: 16px;
   }
+
+  .footer .conteiner .contacts {
+    width: 100%;
+  }
 }
 
 @media (max-width: 390px) {
@@ -3634,9 +3654,9 @@
 }
 
 @media (max-width: 345px) {
-.footer .conteiner .studia__title {
-  font-size: 14px;
-}
+  .footer .conteiner .studia__title {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 336px) {
