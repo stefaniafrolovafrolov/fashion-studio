@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="./fonts/stylesheet.css" />
     <link rel="stylesheet" href="./css/header/header.css" />
     <link rel="stylesheet" href="./css/main.css" />
@@ -207,7 +208,7 @@
     <main>
       <section class="intro-section">
         <div class="container">
-          <div class="intro-section__navigation">
+          <div class="intro-section__navigation" data-aos="fade-right">
             <a class="intro-section__navigation-link" href="./index.html"
               >Главная</a
             >
@@ -216,7 +217,7 @@
           </div>
           <div class="intro-section__box">
             <div class="intro-section__box-left">
-              <div class="intro-section__box-left-description">
+              <div class="intro-section__box-left-description" data-aos="fade-right">
                 <h1 class="intro-section__box-left-description-title">
                   Услуги
                 </h1>
@@ -224,12 +225,17 @@
                   Наши услуги
                 </p>
               </div>
-              <div class="intro-section__box-left-img">
+              <div class="intro-section__box-left-img" data-aos="fade-down">
                 <img src="images/image-1.jpg" alt="фото-1" />
               </div>
             </div>
 
-            <div class="intro-section__box-btn">
+            <button
+              class="intro-section__box-btn"
+              data-aos="fade-down"
+              data-aos-easing="linear"
+              data-aos-duration="1500"
+            >
               <span class="intro-section__box-btn-text">Получить</span>
               <span
                 class="intro-section__box-btn-text intro-section__box-btn-text_sale"
@@ -249,9 +255,9 @@
                 src="./icons/Arrow-2-tablet.png"
                 alt="Стрелка вправо"
               />
-            </div>
+            </button>
 
-            <div class="intro-section__box-right">
+            <div class="intro-section__box-right" data-aos="fade-left">
               <img src="images/image-2.jpg" alt="фото-2" />
             </div>
           </div>
@@ -347,7 +353,10 @@
           <div class="viewer price">
             <div class="viewer__pane viewer__pane_active" id="permanent-makeup">
               <div class="viewer__box row2">
-                <div class="viewer__box-item">
+                <div
+                  class="viewer__box-item"
+                  data-aos="flip-left"
+                >
                   <img
                     class="viewer__box-item-price"
                     src="images-price/photogallery-section/permanent-makeup-price/permanent-makeup-price-1.jpg"
@@ -474,7 +483,7 @@
       </section>
 
       <section class="feed">
-        <div class="container feeds">
+        <div class="container feeds" data-aos="flip-left">
           <div class="feed__wrapper">
             <div class="feed__content">
               <h2 class="feed__title">Остались вопросы?</h2>
@@ -556,8 +565,8 @@
           <div class="location__address">
             <div class="location__title">
               <div class="container">
-                <h2 class="location__heading">Адреса наших салонов :</h2>
-                <h3 class="location__subheading">
+                <h2 class="location__heading" data-aos="flip-left">Адреса наших салонов :</h2>
+                <h3 class="location__subheading" data-aos="fade-left">
                   Озеры: пл. Коммунистическая 46 , 3 этаж
                 </h3>
               </div>
@@ -580,7 +589,7 @@
           <div class="location__address">
             <div class="location__title location__title--height">
               <div class="container">
-                <h3 class="location__subheading">
+                <h3 class="location__subheading" data-aos="fade-left">
                   Москва : Летчика Грицевца 14 а
                 </h3>
               </div>
@@ -602,7 +611,7 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="conteiner">
+      <div class="conteiner" data-aos="fade-down-left">
         <div class="studia">
           <h3 class="studia__title">
             Fashion Studio by <br />
@@ -776,6 +785,8 @@
       </div>
     </div>
     <div class="overlay"></div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./scripts/aos.js"></script>
     <script src="./scripts/script.js"></script>
     <script type="module" src="./scripts/modal-module-page.js"></script>
     <script src="./scripts/gallery.js"></script>

@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="./fonts/stylesheet.css" />
     <link rel="stylesheet" href="./css/header/header.css" />
     <link rel="stylesheet" href="./css/main.css" />
@@ -210,7 +211,7 @@
     <main>
       <section class="intro-section">
         <div class="container">
-          <div class="intro-section__navigation">
+          <div class="intro-section__navigation" data-aos="fade-right">
             <a class="intro-section__navigation-link" href="./index.html"
               >Главная</a
             >
@@ -219,7 +220,10 @@
           </div>
           <div class="intro-section__box">
             <div class="intro-section__box-left">
-              <div class="intro-section__box-left-description">
+              <div
+                class="intro-section__box-left-description"
+                data-aos="fade-right"
+              >
                 <h1 class="intro-section__box-left-description-title">
                   Отзывы
                 </h1>
@@ -227,12 +231,12 @@
                   Отзывы наших клиентов
                 </p>
               </div>
-              <div class="intro-section__box-left-img">
+              <div class="intro-section__box-left-img" data-aos="zoom-in-down">
                 <img src="images/image-1.jpg" alt="фото-1" />
               </div>
             </div>
 
-            <div class="intro-section__box-btn">
+            <button class="intro-section__box-btn" data-aos="fade-down">
               <span class="intro-section__box-btn-text">Получить</span>
               <span
                 class="intro-section__box-btn-text intro-section__box-btn-text_sale"
@@ -252,18 +256,18 @@
                 src="./icons/Arrow-2-tablet.png"
                 alt="Стрелка вправо"
               />
-            </div>
+            </button>
 
-            <div class="intro-section__box-right">
+            <div class="intro-section__box-right" data-aos="zoom-in-left">
               <img src="images/image-2.jpg" alt="фото-2" />
             </div>
           </div>
         </div>
       </section>
 
-      <section class="reviews">
+      <section class="reviews" data-aos="zoom-in-down">
         <div class="container">
-          <h2 class="reviews__title">Отзывы</h2>
+          <h2 class="reviews__title" data-aos="zoom-out-down">Отзывы</h2>
 
           <div class="comments-total-rating"></div>
           <div class="comments-total-rating-stars">
@@ -286,7 +290,7 @@
       </section>
 
       <div class="communication">
-        <div class="container">
+        <div class="container" data-aos="fade-up-right">
           <div class="communication__inner">
             <div class="communication__descr">
               <span class="commTitle">
@@ -377,7 +381,7 @@
         </div>
       </div>
       <section class="feed">
-        <div class="container feeds">
+        <div class="container feeds" data-aos="flip-left">
           <div class="feed__wrapper">
             <div class="feed__content">
               <h2 class="feed__title">Остались вопросы?</h2>
@@ -455,7 +459,7 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="conteiner">
+      <div class="conteiner" data-aos="fade-up-right">
         <div class="studia">
           <h3 class="studia__title">
             Fashion Studio by <br />
@@ -548,11 +552,7 @@
       <div class="modal__inner">
         <div class="modal__header">
           <div class="modal__header-logo">
-            <img
-              class="modal__header-logo-img"
-              src="images/logo.png"
-              alt=""
-            />
+            <img class="modal__header-logo-img" src="images/logo.png" alt="" />
           </div>
           <div class="modal__header-text">
             <p>Fashion Studio by <br />Lomteva Lyudmila</p>
@@ -568,11 +568,7 @@
             свяжеться с вами
           </p>
         </div>
-        <form
-          class="modal__form"
-          id="contactFormPopup"
-          name="contactFormPopup"
-        >
+        <form class="modal__form" id="contactFormPopup" name="contactFormPopup">
           <div class="modal__form-item">
             <span class="modal__form-item-text">Ваше имя</span>
             <input
@@ -636,6 +632,8 @@
       </div>
     </div>
     <div class="overlay"></div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./scripts/aos.js"></script>
     <script src="./scripts/script.js"></script>
     <script src="./scripts/comments.js"></script>
     <script type="module" src="./scripts/modal-module-page.js"></script>

@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="./fonts/stylesheet.css" />
     <link rel="stylesheet" href="./css/header/header.css" />
     <link rel="stylesheet" href="./css/main.css" />
@@ -97,12 +98,14 @@
         </div>
 
         <div class="header__wrapper-text">
-          <h1 class="header__title">Творим красоту с любовью</h1>
-          <p class="header__subtitle">
+          <h1 class="header__title" data-aos="fade-right">
+            Творим красоту с любовью
+          </h1>
+          <p class="header__subtitle" data-aos="fade-left">
             Студия перманентного макияжа Людмилы Ломтевой
           </p>
 
-          <button class="header__button-circle">
+          <button class="header__button-circle" data-aos="fade-right">
             <span class="header__text">Получить</span>
             <span class="header__sale">скидку 10%</span>
             <span class="header__visit">на первый визит</span>
@@ -226,7 +229,7 @@
           <div class="container">
             <h2 class="main__title">Наши услуги</h2>
             <section class="services">
-              <div class="services__item">
+              <div class="services__item" data-aos="flip-left">
                 <img
                   class="services__img"
                   src="./images/image1.png"
@@ -235,7 +238,10 @@
                 <h3 class="services__title">Ресницы</h3>
                 <button class="services__btn">Записаться</button>
               </div>
-              <div class="services__item service-card-show">
+              <div
+                class="services__item service-card-show"
+                data-aos="flip-left"
+              >
                 <img
                   class="services__img"
                   src="./images/image2.png"
@@ -246,7 +252,7 @@
                   Записаться
                 </button>
               </div>
-              <div class="services__item three">
+              <div class="services__item three" data-aos="flip-left">
                 <img
                   class="services__img"
                   src="./images/image3.png"
@@ -275,7 +281,12 @@
                 приобрести онлайн
               </p>
 
-              <div class="certificate__wrapper-block">
+              <div
+                class="certificate__wrapper-block"
+                data-aos="fade-right"
+                data-aos-offset="80"
+                data-aos-easing="ease-in-sine"
+              >
                 <img
                   class="certificate__image-card"
                   src="./images/abon.png"
@@ -301,7 +312,11 @@
 
             <section class="loyalty">
               <h2 class="loyalty__title">Программа лояльности</h2>
-              <div class="loyalty__proposal">
+              <div
+                class="loyalty__proposal"
+                data-aos="fade-up"
+                data-aos-anchor-placement="center-center"
+              >
                 <div class="proposal">
                   <span class="proposal__title">Специальное предложение</span>
                   <div class="proposal__discount">
@@ -322,31 +337,31 @@
         <section class="masters">
           <h2 class="masters__title">Наши мастера</h2>
           <div class="masters__items">
-            <div class="item">
+            <div class="item" data-aos="zoom-out-down">
               <img src="./images/image1.png" alt="Nad" class="item__img" />
               <h3 class="item__title">Надежда</h3>
               <p class="item__text">Косметолог</p>
               <button class="item__btn">Записаться</button>
             </div>
-            <div class="item">
+            <div class="item" data-aos="zoom-out-down">
               <img src="./images/nad2.png" alt="Nad" class="item__img" />
               <h3 class="item__title">Надежда</h3>
               <p class="item__text">Косметолог</p>
               <button class="item__btn">Записаться</button>
             </div>
-            <div class="item">
+            <div class="item" data-aos="zoom-out-down">
               <img src="./images/nad3.png" alt="Nad" class="item__img" />
               <h3 class="item__title">Надежда</h3>
               <p class="item__text">Косметолог</p>
               <button class="item__btn">Записаться</button>
             </div>
-            <div class="item one">
+            <div class="item one" data-aos="zoom-out-down">
               <img src="./images/lud.png" alt="Nad" class="item__img" />
               <h3 class="item__title">Людмила</h3>
               <p class="item__text">Косметолог</p>
               <button class="item__btn">Записаться</button>
             </div>
-            <div class="item two">
+            <div class="item two" data-aos="zoom-out-down">
               <img src="./images/evg.png" alt="Nad" class="item__img" />
               <h3 class="item__title">Евгения</h3>
               <p class="item__text">Косметолог</p>
@@ -364,7 +379,7 @@
         </section>
 
         <section class="certificate-image">
-          <div class="container">
+          <div class="container" data-aos="fade-down-left">
             <h2 class="certificate-image-title">Сертификаты</h2>
             <div class="certificate-image__box">
               <div class="certificate-image__box-item">
@@ -437,7 +452,7 @@
         <section class="training">
           <div class="container">
             <h2 class="training__title">Обучение</h2>
-            <div class="training__descr">
+            <div class="training__descr" data-aos="fade-right">
               <div class="training__text">
                 <p class="textTit">
                   <span class="textTit__span"
@@ -462,7 +477,7 @@
         <section class="portfolio">
           <div class="container">
             <h2 class="portfolio__title">Портфолио</h2>
-            <div class="block">
+            <div class="block" data-aos="zoom-in">
               <div class="swiper awards-slider">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide portf-slide">
@@ -602,7 +617,7 @@
                 title="не задан"
               />
 
-              <div class="container-comments-area"></div>
+              <div class="container-comments-area" data-aos="zoom-out"></div>
             </div>
 
             <div class="reviews__container">
@@ -620,7 +635,7 @@
         <section class="communication">
           <div class="container">
             <div class="communication__inner">
-              <div class="communication__descr">
+              <div class="communication__descr" data-aos="fade-up-right">
                 <h3 class="commTitle">
                   <span class="communication__text-nowrap"
                     >Понравилось обслуживание?</span
@@ -699,7 +714,7 @@
                   </div>
                 </form>
               </div>
-              <div class="communication__photo">
+              <div class="communication__photo" data-aos="fade-down-left">
                 <img
                   class="communication__photo-image"
                   src="./images/obsluga.png"
@@ -710,7 +725,7 @@
           </div>
         </section>
 
-        <section class="why-us">
+        <section class="why-us" data-aos="zoom-in">
           <h3 class="why-us__title">Почему мы</h3>
           <div class="why-us__wrapper">
             <div class="container">
@@ -751,7 +766,7 @@
         </section>
 
         <section class="feed">
-          <div class="container feeds">
+          <div class="container feeds" data-aos="flip-left">
             <div class="feed__wrapper">
               <div class="feed__content">
                 <h3 class="feed__title">Остались вопросы?</h3>
@@ -834,8 +849,10 @@
             <div class="location__address">
               <div class="location__title">
                 <div class="container">
-                  <h3 class="location__heading">Адреса наших салонов :</h3>
-                  <p class="location__subheading">
+                  <h3 class="location__heading" data-aos="fade-right">
+                    Адреса наших салонов :
+                  </h3>
+                  <p class="location__subheading" data-aos="fade-left">
                     Озеры: пл. Коммунистическая 46 , 3 этаж
                   </p>
                 </div>
@@ -858,7 +875,7 @@
             <div class="location__address">
               <div class="location__title location__title--height">
                 <div class="container">
-                  <p class="location__subheading">
+                  <p class="location__subheading" data-aos="fade-left">
                     Москва : Летчика Грицевца 14 а
                   </p>
                 </div>
@@ -879,7 +896,12 @@
           </div>
         </section>
       </main>
-      <footer class="footer">
+      <footer
+        class="footer"
+        data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500"
+      >
         <div class="conteiner">
           <div class="studia">
             <h3 class="studia__title">
@@ -1062,6 +1084,8 @@
       </div>
       <div class="overlay"></div>
     </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./scripts/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./scripts/script.js"></script>
     <script type="module" src="./scripts/modal-page-index.js"></script>
