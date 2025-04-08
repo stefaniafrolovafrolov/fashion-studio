@@ -178,7 +178,7 @@
 
 @media (max-width: 640px) {
   .tabs__link {
-    font-size: 16px;
+    font-size: 14px;
     padding: 6px;
   }
 
@@ -193,7 +193,7 @@
   }
 
   .tabs__link {
-    font-size: 12px;
+    font-size: 10px;
   }
 
   .info__grid {
