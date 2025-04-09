@@ -1,7 +1,7 @@
 // Подключаем файл .env к проекту
 require('dotenv').config();
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3002;
 const { TOKEN } = process.env;
 const { CHAT_ID } = process.env;
 const FILENAME_DELAYED_DATABASE = process.env.FILENAME_DELAYED_DATABASE || 'delayed.dat';
