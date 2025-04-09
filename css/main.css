@@ -303,10 +303,10 @@ nav .nav__social {
   z-index: -9999;
 }
 
-body {
+/*body {
   background: transparent url("video_finish.mp4") no-repeat;
   background-size: cover;
-}
+}*/
 .bgvideo {
   position: absolute;
   top: 0;
@@ -318,6 +318,7 @@ body {
   width: 100%;
   z-index: -9999;
   object-fit: cover;
+  background-size: cover;
   overflow: hidden;
 }
 .title {

@@ -7,6 +7,7 @@
   background-color: #323232;
   position: relative;
   overflow-x: hidden;
+  height: 100%;
 }
 
 .mobile-header {
@@ -16,20 +17,24 @@
 .header_fon-video {
   object-fit: cover;
   background-size: cover;
-  aspect-ratio: calc(width / height);
+  /*aspect-ratio: calc(width / height);*/
+  
   width: 100%;
-  background: none;
-  height: auto;
+  height: 100%;
+  /*background: none;*/
+  /*height: auto;*/
 }
 
 .header__bgvideo {
+  object-fit: cover;
+  background-size: cover;
   position: absolute;
   top: 0;
   left: 0;
-  height: auto;
+  height: 100%;
   width: 100%;
   z-index: -100;
-  aspect-ratio: calc(width / height);
+  /*aspect-ratio: calc(width / height);*/
 }
 
 .header__container {
