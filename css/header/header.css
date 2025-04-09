@@ -5,8 +5,9 @@
   align-items: center;
   width: 1920px;
   background-color: #323232;
+ /* background: red;*/
   position: relative;
-  overflow-x: hidden;
+  /*overflow-x: hidden;*/
   height: 100%;
 }
 
