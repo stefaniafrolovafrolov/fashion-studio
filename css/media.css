@@ -2631,7 +2631,7 @@
   }
 
   .item.item img {
-    height: 290px;
+    height: 390px;
   }
 
   .masters__items {
@@ -2654,7 +2654,7 @@
     display: flex;
     justify-content: center;
     gap: 100px;
-    margin-top: 30px;
+    margin-top: 130px;
   }
   .services-arrow-prev {
     width: 30px;
@@ -3256,7 +3256,7 @@
   }
 
   .services-arrow {
-    margin-top: 25px;
+    margin-top: 125px;
   }
 
   .training__descr .training__text .textTit {
@@ -3287,6 +3287,14 @@
 
   .feed__wrapper {
     max-width: 310px;
+  }
+
+  .item.item img {
+    height: 280px;
+  }
+
+  .services-arrow {
+    margin-top: 35px;
   }
 
   .feed__photo {
