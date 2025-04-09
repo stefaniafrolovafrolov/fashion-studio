@@ -5,10 +5,6 @@ const serverErrorMessageFormPopup = document.getElementById(
   "server-error-message-formPopup"
 );
 
-/*const messageValidationFormPtocedures = document.querySelector(
-  ".procedures__message-validation"
-);*/
-
 let isSendingFormPopup = false;
 let countdownValueFormPopup = 60;
 const timerMessageFormPopup = document.getElementById("timerMessage-formPopup");
@@ -91,12 +87,6 @@ formPopup.addEventListener("submit", function (e) {
     phone: formData.get("phone"),
   };
 
-  /*if (!areFieldsValid()) {
-    console.error("Заполните все поля!");
-    messageValidationFormPtocedures.style.display = "block";
-    return;
-  }*/
-
   submitButtonFormPopup.disabled = true;
   submitButtonFormPopup.textContent = "Отправка...";
   submitButtonFormPopup.classList.add(
@@ -105,7 +95,7 @@ formPopup.addEventListener("submit", function (e) {
   serverErrorMessage.style.display = "none";
 
   //fetch("http://localhost:3002/backend/submit-form", {
-    fetch("https://clean-moskow.ru/backend/submit-form", {
+  fetch("https://clean-moskow.ru/backend/submit-form", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
