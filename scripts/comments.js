@@ -1,4 +1,6 @@
-const baseURL4API = "http://localhost:3000/backend";
+//const baseURL4API = "http://localhost:3002/backend";
+const baseURL4API = "https://clean-moskow.ru/backend";
+
 const commentsRateImages = [
   "/images/stars/starun.svg",
   "/images/stars/star00.svg",
